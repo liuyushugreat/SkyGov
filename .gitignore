@@ -1,0 +1,44 @@
+# Byte-compiled / optimised / cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# Build artefacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+
+# LaTeX / office scratch files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+~$*.docx
+~$*.xlsx
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local scratch (never committed)
+_*.py
+_*.txt
+scratch/

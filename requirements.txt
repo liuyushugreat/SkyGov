@@ -1,0 +1,13 @@
+# SkyGov-C runtime dependencies.
+# No language-model client is required: the extractor is deterministic
+# (see the "Use of generative AI" section of the README).
+
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.3
+rdflib>=6.3
+pyshacl>=0.20
+matplotlib>=3.7
+
+# Development / test only:
+#   pip install pytest

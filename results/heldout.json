@@ -1,0 +1,87 @@
+{
+  "S2_frame": {
+    "n_clauses": 19,
+    "n_props": 17,
+    "precision": 0.2,
+    "recall": 0.25,
+    "f1": 0.22222222222222224,
+    "compilability_accuracy": 0.8947368421052632,
+    "failure_mode_agreement": 0.0,
+    "components": {
+      "n_clauses": 16,
+      "deontic_acc": 0.9375,
+      "subject_acc": 0.75,
+      "action_acc": 0.5,
+      "condition_jaccard": 0.65625,
+      "exact_acc": 0.1875,
+      "field_mean": 0.7109375
+    },
+    "fp_pids": [
+      "H02-C001-P1",
+      "H04-C002-P1",
+      "H02-C002-P1",
+      "H02-C004-P1",
+      "H01-C004-P1",
+      "H03-C001-P1",
+      "H03-C004-P1",
+      "H01-C001-P1",
+      "H04-C001-P1",
+      "H01-C003-P1",
+      "H03-C005-P1",
+      "H01-C002-P1"
+    ],
+    "fn_pids": [
+      "H01-C001-G1",
+      "H02-C001-G1",
+      "H04-C003-G1",
+      "H01-C004-G1",
+      "H03-C004-G1",
+      "H01-C005-G1",
+      "H03-C001-G1",
+      "H02-C004-G1",
+      "H03-C002-G1"
+    ]
+  },
+  "S3_repair": {
+    "n_clauses": 19,
+    "n_props": 16,
+    "precision": 0.21428571428571427,
+    "recall": 0.25,
+    "f1": 0.23076923076923075,
+    "compilability_accuracy": 0.9473684210526315,
+    "failure_mode_agreement": 0.6666666666666666,
+    "components": {
+      "n_clauses": 16,
+      "deontic_acc": 0.9375,
+      "subject_acc": 0.75,
+      "action_acc": 0.5,
+      "condition_jaccard": 0.65625,
+      "exact_acc": 0.1875,
+      "field_mean": 0.7109375
+    },
+    "fp_pids": [
+      "H02-C001-P1",
+      "H04-C002-P1",
+      "H02-C004-P1",
+      "H01-C004-P1",
+      "H03-C001-P1",
+      "H03-C004-P1",
+      "H01-C001-P1",
+      "H04-C001-P1",
+      "H01-C003-P1",
+      "H03-C005-P1",
+      "H01-C002-P1"
+    ],
+    "fn_pids": [
+      "H01-C001-G1",
+      "H02-C001-G1",
+      "H04-C003-G1",
+      "H01-C004-G1",
+      "H03-C004-G1",
+      "H01-C005-G1",
+      "H03-C001-G1",
+      "H02-C004-G1",
+      "H03-C002-G1"
+    ]
+  }
+}

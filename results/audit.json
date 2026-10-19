@@ -1,0 +1,31 @@
+{
+  "grounded": {
+    "rar_mean": 1.0,
+    "rar_min": 1.0,
+    "rar_max": 1.0,
+    "lec_mean": 1.0,
+    "tcc_mean": 0.6563333333333334,
+    "n_claims_mean": 18.865
+  },
+  "truncated": {
+    "rar_mean": 0.513266590389016,
+    "rar_min": 0.5,
+    "rar_max": 0.5294117647058824,
+    "lec_mean": 0.5509530857214681,
+    "tcc_mean": 0.6563333333333334,
+    "n_claims_mean": 18.865
+  },
+  "augmented": {
+    "rar_mean": 0.8622985286452678,
+    "rar_min": 0.85,
+    "rar_max": 0.8846153846153846,
+    "lec_mean": 1.0,
+    "tcc_mean": 0.6563333333333334,
+    "n_claims_mean": 21.865
+  },
+  "separation": {
+    "grounded_minus_truncated": 0.486733409610984,
+    "grounded_minus_augmented": 0.1377014713547322,
+    "ranges_disjoint": true
+  }
+}

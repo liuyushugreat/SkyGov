@@ -1,0 +1,71 @@
+{
+  "mechanisms": {
+    "L0": {
+      "mae_at": {
+        "30": 0.4277777777777772,
+        "90": 0.4277777777777772,
+        "180": 0.4277777777777772
+      },
+      "excess_events": 1836.0000000012153,
+      "conformal": null
+    },
+    "L1": {
+      "mae_at": {
+        "30": 0.4277777777777772,
+        "90": 0.4277777777777772,
+        "180": 0.4277777777777772
+      },
+      "excess_events": 1836.0000000012153,
+      "conformal": null
+    },
+    "L2": {
+      "mae_at": {
+        "30": 0.08389181317429516,
+        "90": 0.040150313897245285,
+        "180": 0.02461263363226436
+      },
+      "excess_events": 270.56578702636637,
+      "conformal": {
+        "alpha": 0.1,
+        "q": 9.88790359481871,
+        "empirical_coverage": 0.9007222222222222,
+        "mean_width": 19.77580718963742,
+        "n_calib": 18000
+      }
+    },
+    "L3": {
+      "mae_at": {
+        "30": 0.08051946232789035,
+        "90": 0.03828787919235573,
+        "180": 0.024310274919341183
+      },
+      "excess_events": 233.68720967252548,
+      "conformal": {
+        "alpha": 0.1,
+        "q": 9.362035113630519,
+        "empirical_coverage": 0.8993888888888889,
+        "mean_width": 18.724070227261038,
+        "n_calib": 18000
+      }
+    }
+  },
+  "l0_l1_identical": true,
+  "rollback": {
+    "detection_rate": 1.0,
+    "false_alarm_rate": 0.0,
+    "mean_delay_days": 22.79,
+    "median_delay_days": 23.0,
+    "p90_delay_days": 24.0,
+    "n_detected": 200,
+    "reps": 200,
+    "n_days": 180,
+    "true_drift_at": 90,
+    "drift_size": -0.35,
+    "threshold": 0.85,
+    "alpha": 0.05,
+    "min_days": 14,
+    "window": 30,
+    "direction": "down",
+    "sigma": 0.05
+  }
+}

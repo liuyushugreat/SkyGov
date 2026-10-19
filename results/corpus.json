@@ -1,0 +1,299 @@
+{
+  "n_clauses": 78,
+  "n_dev_clauses": 59,
+  "n_core_clauses": 55,
+  "n_heldout_clauses": 19,
+  "n_external_clauses": 4,
+  "n_documents": 23,
+  "n_core_documents": 16,
+  "n_heldout_documents": 4,
+  "dev_records": 59,
+  "dev_compilable": 33,
+  "dev_non_compilable": 26,
+  "dev_gold_propositions": 37,
+  "dev_distinct_gold_props": 27,
+  "dev_redundant_cids": 10,
+  "heldout_records": 19,
+  "heldout_compilable": 16,
+  "heldout_non_compilable": 3,
+  "heldout_gold_propositions": 16,
+  "heldout_distinct_gold_props": 12,
+  "failure_modes_dev": {
+    "constitutive_schema": 1,
+    "authorisation": 2,
+    "sanction": 2,
+    "meta_validity": 1,
+    "definitional": 5,
+    "policy_non_normative": 7,
+    "discretionary": 4,
+    "cross_reference": 1,
+    "schema_gap": 2,
+    "methodological": 1
+  },
+  "failure_modes_heldout": {
+    "policy_non_normative": 1,
+    "discretionary": 2
+  },
+  "redundancy_pairs": {
+    "D01-C001": [
+      "D01-C002"
+    ],
+    "D01-C010": [
+      "D02-C002"
+    ],
+    "D01-C012": [
+      "D02-C003"
+    ],
+    "D01-C003": [
+      "D12-C001"
+    ],
+    "D01-C008": [
+      "D12-C002"
+    ],
+    "D01-C005": [
+      "D13-C002",
+      "D15-C002"
+    ],
+    "D01-C013": [
+      "D13-C004"
+    ],
+    "D14-C004": [
+      "E01-C001"
+    ],
+    "D14-C003": [
+      "E01-C002"
+    ]
+  },
+  "documents": [
+    {
+      "doc_id": "D01",
+      "title": "无人驾驶航空器飞行管理暂行条例",
+      "level": "admin_regulation",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 15,
+      "instrument_date": "2023-05-31",
+      "effective_date": "2024-01-01",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D02",
+      "title": "中华人民共和国民用航空法",
+      "level": "law",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 4,
+      "instrument_date": "2025-12-27",
+      "effective_date": "2026-07-01",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D03",
+      "title": "中华人民共和国立法法",
+      "level": "law",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 2,
+      "instrument_date": "2023-03-13",
+      "effective_date": "2023-03-15",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D04",
+      "title": "国家空域基础分类方法",
+      "level": "dept_rule",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 4,
+      "instrument_date": "2023-12-21",
+      "effective_date": "2024-01-01",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D05",
+      "title": "国务院2026年度立法工作计划",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2026-05",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D06",
+      "title": "通用航空装备创新应用实施方案（2024—2030年）",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2024-03",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D07",
+      "title": "国务院办公厅关于加快场景培育和开放推动新场景大规模应用的实施意见",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 2,
+      "instrument_date": "2025-11-02",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D08",
+      "title": "中共中央关于制定国民经济和社会发展第十五个五年规划的建议",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2025-10",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D09",
+      "title": "政府工作报告（2024年）",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2024-03",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D10",
+      "title": "政府工作报告（2025年）",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2025-03",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D11",
+      "title": "政府工作报告（2026年）",
+      "level": "policy",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 1,
+      "instrument_date": "2026-03",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "D12",
+      "title": "吉林省无人驾驶航空器适飞空域范围公告",
+      "level": "local_notice",
+      "jurisdiction": "CN-JL",
+      "n_clauses": 3,
+      "instrument_date": "2026-05-12",
+      "effective_date": "2026-05-12",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D13",
+      "title": "天津市人民政府关于公布本市无人驾驶航空器管制空域范围的通告",
+      "level": "local_notice",
+      "jurisdiction": "CN-TJ",
+      "n_clauses": 4,
+      "instrument_date": "2026-09-30",
+      "effective_date": "2026-09-30",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D14",
+      "title": "深圳经济特区低空经济产业促进条例",
+      "level": "local_regulation",
+      "jurisdiction": "CN-SZ",
+      "n_clauses": 6,
+      "instrument_date": "2023-12-29",
+      "effective_date": "2024-02-01",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D15",
+      "title": "北京市无人驾驶航空器管理规定",
+      "level": "local_regulation",
+      "jurisdiction": "CN-BJ",
+      "n_clauses": 5,
+      "instrument_date": "2026-03-27",
+      "effective_date": "2026-05-01",
+      "split": "dev"
+    },
+    {
+      "doc_id": "D16",
+      "title": "北京市无人驾驶航空器管理规定（2026年9月修订）",
+      "level": "local_regulation",
+      "jurisdiction": "CN-BJ",
+      "n_clauses": 4,
+      "instrument_date": "2026-09-11",
+      "effective_date": "2026-11-15",
+      "split": "dev"
+    },
+    {
+      "doc_id": "E01",
+      "title": "Commission Implementing Regulation (EU) 2021/664 (U-space)",
+      "level": "external_standard",
+      "jurisdiction": "EU",
+      "n_clauses": 2,
+      "instrument_date": "2021-04-22",
+      "effective_date": "2023-01-26",
+      "split": "dev"
+    },
+    {
+      "doc_id": "E02",
+      "title": "UAS Traffic Management (UTM) Concept of Operations v2.0",
+      "level": "external_standard",
+      "jurisdiction": "US",
+      "n_clauses": 1,
+      "instrument_date": "2020-03",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "E03",
+      "title": "JARUS Guidelines on Specific Operations Risk Assessment (SORA) v2.5",
+      "level": "external_standard",
+      "jurisdiction": "INTL",
+      "n_clauses": 1,
+      "instrument_date": "2024-05-13",
+      "effective_date": null,
+      "split": "dev"
+    },
+    {
+      "doc_id": "H01",
+      "title": "无人驾驶航空器飞行管理暂行条例（保险与应急条款）",
+      "level": "admin_regulation",
+      "jurisdiction": "CN-NATIONAL",
+      "n_clauses": 6,
+      "instrument_date": "2023-05-31",
+      "effective_date": "2024-01-01",
+      "split": "heldout"
+    },
+    {
+      "doc_id": "H02",
+      "title": "深圳经济特区低空经济产业促进条例（设施与培训条款）",
+      "level": "local_regulation",
+      "jurisdiction": "CN-SZ",
+      "n_clauses": 4,
+      "instrument_date": "2023-12-29",
+      "effective_date": "2024-02-01",
+      "split": "heldout"
+    },
+    {
+      "doc_id": "H03",
+      "title": "北京市无人驾驶航空器管理规定（运行管理条款）",
+      "level": "local_regulation",
+      "jurisdiction": "CN-BJ",
+      "n_clauses": 5,
+      "instrument_date": "2026-09-11",
+      "effective_date": "2026-11-15",
+      "split": "heldout"
+    },
+    {
+      "doc_id": "H04",
+      "title": "天津市无人驾驶航空器管制空域管理实施细则",
+      "level": "local_notice",
+      "jurisdiction": "CN-TJ",
+      "n_clauses": 4,
+      "instrument_date": "2026-09-30",
+      "effective_date": "2026-10-15",
+      "split": "heldout"
+    }
+  ]
+}

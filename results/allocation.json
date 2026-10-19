@@ -1,0 +1,411 @@
+{
+  "floor_total": 8.43,
+  "max_total": 13.560000000000002,
+  "budgets": [
+    12.149,
+    12.408,
+    12.667,
+    12.926,
+    13.186,
+    13.445
+  ],
+  "sweep": [
+    {
+      "budget": 12.149,
+      "tiered_total_cost": 12.1,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.37281924320511156,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": -0.032080443530628555,
+      "mean_completion_tiered": 0.851,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 4
+    },
+    {
+      "budget": 12.408,
+      "tiered_total_cost": 12.34,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.3690278441739317,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": -0.021584663430702422,
+      "mean_completion_tiered": 0.8559999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 5
+    },
+    {
+      "budget": 12.667,
+      "tiered_total_cost": 12.579999999999998,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.35414449854749624,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": 0.01961709918030141,
+      "mean_completion_tiered": 0.8639999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 5
+    },
+    {
+      "budget": 12.926,
+      "tiered_total_cost": 12.819999999999999,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.3465012145860518,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": 0.04077610329484538,
+      "mean_completion_tiered": 0.8704999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 5
+    },
+    {
+      "budget": 13.186,
+      "tiered_total_cost": 12.999999999999998,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.34158794348922905,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": 0.054377576676961636,
+      "mean_completion_tiered": 0.8729999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 5
+    },
+    {
+      "budget": 13.445,
+      "tiered_total_cost": 13.219999999999999,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.3382831707748794,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": 0.06352622270572206,
+      "mean_completion_tiered": 0.8744999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 6
+    }
+  ],
+  "best": {
+    "budget": 13.445,
+    "tiered_total_cost": 13.219999999999999,
+    "uniform_total_cost": 12.120000000000001,
+    "mean_incident_tiered": 0.3382831707748794,
+    "mean_incident_uniform": 0.36123079895762755,
+    "relative_gain": 0.06352622270572206,
+    "mean_completion_tiered": 0.8744999999999999,
+    "mean_completion_uniform": 0.839,
+    "n_tiers_improved": 6,
+    "tiered": [
+      {
+        "tier": "capital_core",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.32627979462303947,
+        "tiered_completion": 0.84,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.34300851741870664,
+        "uniform_completion": 0.8009999999999999,
+        "improvement": 0.048770575499285984
+      },
+      {
+        "tier": "dense_hub",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.31981902181630384,
+        "tiered_completion": 0.87,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.33621649370673334,
+        "uniform_completion": 0.834,
+        "improvement": 0.048770575499286095
+      },
+      {
+        "tier": "market_driven",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.3395955256449391,
+        "tiered_completion": 0.8999999999999999,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.3867410234545012,
+        "uniform_completion": 0.855,
+        "improvement": 0.1219045690794387
+      },
+      {
+        "tier": "mountainous",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.36787944117144233,
+        "tiered_completion": 0.882,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.39062783535852114,
+        "uniform_completion": 0.852,
+        "improvement": 0.05823546641575139
+      },
+      {
+        "tier": "border_coastal",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.2893842179390506,
+        "tiered_completion": 0.882,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.3042212640667041,
+        "uniform_completion": 0.849,
+        "improvement": 0.048770575499286206
+      },
+      {
+        "tier": "sparse_resource",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "tiered_cost": 1.92,
+        "tiered_incident": 0.3867410234545012,
+        "tiered_completion": 0.873,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.4065696597405991,
+        "uniform_completion": 0.843,
+        "improvement": 0.048770575499286095
+      }
+    ]
+  },
+  "tiered": [
+    {
+      "tier": "capital_core",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tiered_cost": 2.2600000000000002,
+      "tiered_incident": 0.32627979462303947,
+      "tiered_completion": 0.84,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.34300851741870664,
+      "uniform_completion": 0.8009999999999999,
+      "improvement": 0.048770575499285984
+    },
+    {
+      "tier": "dense_hub",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tiered_cost": 2.2600000000000002,
+      "tiered_incident": 0.31981902181630384,
+      "tiered_completion": 0.87,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.33621649370673334,
+      "uniform_completion": 0.834,
+      "improvement": 0.048770575499286095
+    },
+    {
+      "tier": "market_driven",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tiered_cost": 2.2600000000000002,
+      "tiered_incident": 0.3395955256449391,
+      "tiered_completion": 0.8999999999999999,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.3867410234545012,
+      "uniform_completion": 0.855,
+      "improvement": 0.1219045690794387
+    },
+    {
+      "tier": "mountainous",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tiered_cost": 2.2600000000000002,
+      "tiered_incident": 0.36787944117144233,
+      "tiered_completion": 0.882,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.39062783535852114,
+      "uniform_completion": 0.852,
+      "improvement": 0.05823546641575139
+    },
+    {
+      "tier": "border_coastal",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "tiered_cost": 2.2600000000000002,
+      "tiered_incident": 0.2893842179390506,
+      "tiered_completion": 0.882,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.3042212640667041,
+      "uniform_completion": 0.849,
+      "improvement": 0.048770575499286206
+    },
+    {
+      "tier": "sparse_resource",
+      "tiered_levels": [
+        2,
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "tiered_cost": 1.92,
+      "tiered_incident": 0.3867410234545012,
+      "tiered_completion": 0.873,
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "uniform_cost": 2.02,
+      "uniform_incident": 0.4065696597405991,
+      "uniform_completion": 0.843,
+      "improvement": 0.048770575499286095
+    }
+  ],
+  "mean_incident_tiered": 0.3382831707748794,
+  "mean_incident_uniform": 0.36123079895762755,
+  "mean_completion_tiered": 0.8744999999999999,
+  "mean_completion_uniform": 0.839
+}

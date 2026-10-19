@@ -1,0 +1,224 @@
+{
+  "reference": {
+    "per_jurisdiction": {
+      "CN-BJ": {
+        "predicted": "capital_core",
+        "gold": "capital_core",
+        "correct": true,
+        "chain": [
+          "T1",
+          "T2",
+          "T6"
+        ]
+      },
+      "CN-TJ": {
+        "predicted": "dense_hub",
+        "gold": "dense_hub",
+        "correct": true,
+        "chain": [
+          "T2",
+          "T3",
+          "T6"
+        ]
+      },
+      "CN-SZ": {
+        "predicted": "market_driven",
+        "gold": "market_driven",
+        "correct": true,
+        "chain": [
+          "T5",
+          "T3",
+          "T6"
+        ]
+      },
+      "CN-CD": {
+        "predicted": "mountainous",
+        "gold": "mountainous",
+        "correct": true,
+        "chain": [
+          "T4",
+          "T6"
+        ]
+      },
+      "CN-HN": {
+        "predicted": "border_coastal",
+        "gold": "border_coastal",
+        "correct": true,
+        "chain": [
+          "T3",
+          "T6"
+        ]
+      },
+      "CN-JL": {
+        "predicted": "sparse_resource",
+        "gold": "sparse_resource",
+        "correct": true,
+        "chain": [
+          "T5b",
+          "T4",
+          "T6"
+        ]
+      }
+    },
+    "accuracy": 1.0,
+    "n": 6
+  },
+  "benchmark": {
+    "noise_0.08": {
+      "rule_accuracy": 0.86,
+      "ml_accuracy": {
+        "decision_tree": 0.9666666666666667,
+        "logistic": 0.9833333333333333,
+        "random_forest": 0.9916666666666667
+      },
+      "rule_chain_length": 2.1016666666666666,
+      "n": 600,
+      "confusion": {
+        "capital_core": {
+          "capital_core": 69,
+          "dense_hub": 30,
+          "sparse_resource": 1
+        },
+        "dense_hub": {
+          "dense_hub": 97,
+          "sparse_resource": 3
+        },
+        "market_driven": {
+          "market_driven": 83,
+          "dense_hub": 17
+        },
+        "mountainous": {
+          "mountainous": 99,
+          "dense_hub": 1
+        },
+        "border_coastal": {
+          "sparse_resource": 29,
+          "border_coastal": 71
+        },
+        "sparse_resource": {
+          "sparse_resource": 97,
+          "mountainous": 3
+        }
+      }
+    },
+    "noise_0.12": {
+      "rule_accuracy": 0.7816666666666666,
+      "ml_accuracy": {
+        "decision_tree": 0.9333333333333333,
+        "logistic": 0.975,
+        "random_forest": 0.975
+      },
+      "rule_chain_length": 2.06,
+      "n": 600,
+      "confusion": {
+        "capital_core": {
+          "dense_hub": 43,
+          "capital_core": 54,
+          "sparse_resource": 3
+        },
+        "dense_hub": {
+          "dense_hub": 88,
+          "market_driven": 5,
+          "sparse_resource": 7
+        },
+        "market_driven": {
+          "market_driven": 77,
+          "dense_hub": 20,
+          "border_coastal": 2,
+          "sparse_resource": 1
+        },
+        "mountainous": {
+          "mountainous": 96,
+          "sparse_resource": 2,
+          "market_driven": 1,
+          "dense_hub": 1
+        },
+        "border_coastal": {
+          "sparse_resource": 34,
+          "border_coastal": 63,
+          "mountainous": 3
+        },
+        "sparse_resource": {
+          "sparse_resource": 91,
+          "mountainous": 9
+        }
+      }
+    },
+    "noise_0.18": {
+      "rule_accuracy": 0.6716666666666666,
+      "ml_accuracy": {
+        "decision_tree": 0.85,
+        "logistic": 0.9166666666666666,
+        "random_forest": 0.9125
+      },
+      "rule_chain_length": 2.075,
+      "n": 600,
+      "confusion": {
+        "capital_core": {
+          "dense_hub": 40,
+          "capital_core": 44,
+          "sparse_resource": 15,
+          "market_driven": 1
+        },
+        "dense_hub": {
+          "sparse_resource": 17,
+          "dense_hub": 74,
+          "market_driven": 7,
+          "border_coastal": 1,
+          "mountainous": 1
+        },
+        "market_driven": {
+          "market_driven": 69,
+          "dense_hub": 23,
+          "border_coastal": 5,
+          "sparse_resource": 3
+        },
+        "mountainous": {
+          "mountainous": 83,
+          "sparse_resource": 8,
+          "market_driven": 4,
+          "dense_hub": 5
+        },
+        "border_coastal": {
+          "sparse_resource": 37,
+          "border_coastal": 52,
+          "mountainous": 8,
+          "market_driven": 2,
+          "dense_hub": 1
+        },
+        "sparse_resource": {
+          "sparse_resource": 81,
+          "mountainous": 17,
+          "border_coastal": 2
+        }
+      }
+    }
+  },
+  "airspace_regime": {
+    "CN-NATIONAL": {
+      "basis": "D01-C003, D04-C002",
+      "permitted_fraction": 0.75,
+      "note": "真高120米以下非管制空域为适飞空域"
+    },
+    "CN-JL": {
+      "basis": "D12-C001",
+      "permitted_fraction": 0.7,
+      "note": "省级公告沿用国家口径，适飞范围扩大"
+    },
+    "CN-TJ": {
+      "basis": "D13-C001",
+      "permitted_fraction": 0.0,
+      "note": "全市域划为管制空域"
+    },
+    "CN-BJ": {
+      "basis": "D15-C001, D16-C001",
+      "permitted_fraction": 0.0,
+      "note": "全市域划为管制空域，两版一致"
+    },
+    "CN-SZ": {
+      "basis": "D14-C001..C006",
+      "permitted_fraction": 0.75,
+      "note": "产业促进型法规，不改空域类别"
+    }
+  }
+}

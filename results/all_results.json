@@ -1,0 +1,3205 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "python": "3.14.3",
+    "np": "2.4.2",
+    "seconds": 34.8
+  },
+  "corpus": {
+    "n_clauses": 78,
+    "n_dev_clauses": 59,
+    "n_core_clauses": 55,
+    "n_heldout_clauses": 19,
+    "n_external_clauses": 4,
+    "n_documents": 23,
+    "n_core_documents": 16,
+    "n_heldout_documents": 4,
+    "dev_records": 59,
+    "dev_compilable": 33,
+    "dev_non_compilable": 26,
+    "dev_gold_propositions": 37,
+    "dev_distinct_gold_props": 27,
+    "dev_redundant_cids": 10,
+    "heldout_records": 19,
+    "heldout_compilable": 16,
+    "heldout_non_compilable": 3,
+    "heldout_gold_propositions": 16,
+    "heldout_distinct_gold_props": 12,
+    "failure_modes_dev": {
+      "constitutive_schema": 1,
+      "authorisation": 2,
+      "sanction": 2,
+      "meta_validity": 1,
+      "definitional": 5,
+      "policy_non_normative": 7,
+      "discretionary": 4,
+      "cross_reference": 1,
+      "schema_gap": 2,
+      "methodological": 1
+    },
+    "failure_modes_heldout": {
+      "policy_non_normative": 1,
+      "discretionary": 2
+    },
+    "redundancy_pairs": {
+      "D01-C001": [
+        "D01-C002"
+      ],
+      "D01-C010": [
+        "D02-C002"
+      ],
+      "D01-C012": [
+        "D02-C003"
+      ],
+      "D01-C003": [
+        "D12-C001"
+      ],
+      "D01-C008": [
+        "D12-C002"
+      ],
+      "D01-C005": [
+        "D13-C002",
+        "D15-C002"
+      ],
+      "D01-C013": [
+        "D13-C004"
+      ],
+      "D14-C004": [
+        "E01-C001"
+      ],
+      "D14-C003": [
+        "E01-C002"
+      ]
+    },
+    "documents": [
+      {
+        "doc_id": "D01",
+        "title": "无人驾驶航空器飞行管理暂行条例",
+        "level": "admin_regulation",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 15,
+        "instrument_date": "2023-05-31",
+        "effective_date": "2024-01-01",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D02",
+        "title": "中华人民共和国民用航空法",
+        "level": "law",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 4,
+        "instrument_date": "2025-12-27",
+        "effective_date": "2026-07-01",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D03",
+        "title": "中华人民共和国立法法",
+        "level": "law",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 2,
+        "instrument_date": "2023-03-13",
+        "effective_date": "2023-03-15",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D04",
+        "title": "国家空域基础分类方法",
+        "level": "dept_rule",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 4,
+        "instrument_date": "2023-12-21",
+        "effective_date": "2024-01-01",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D05",
+        "title": "国务院2026年度立法工作计划",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2026-05",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D06",
+        "title": "通用航空装备创新应用实施方案（2024—2030年）",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2024-03",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D07",
+        "title": "国务院办公厅关于加快场景培育和开放推动新场景大规模应用的实施意见",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 2,
+        "instrument_date": "2025-11-02",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D08",
+        "title": "中共中央关于制定国民经济和社会发展第十五个五年规划的建议",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2025-10",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D09",
+        "title": "政府工作报告（2024年）",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2024-03",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D10",
+        "title": "政府工作报告（2025年）",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2025-03",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D11",
+        "title": "政府工作报告（2026年）",
+        "level": "policy",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 1,
+        "instrument_date": "2026-03",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "D12",
+        "title": "吉林省无人驾驶航空器适飞空域范围公告",
+        "level": "local_notice",
+        "jurisdiction": "CN-JL",
+        "n_clauses": 3,
+        "instrument_date": "2026-05-12",
+        "effective_date": "2026-05-12",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D13",
+        "title": "天津市人民政府关于公布本市无人驾驶航空器管制空域范围的通告",
+        "level": "local_notice",
+        "jurisdiction": "CN-TJ",
+        "n_clauses": 4,
+        "instrument_date": "2026-09-30",
+        "effective_date": "2026-09-30",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D14",
+        "title": "深圳经济特区低空经济产业促进条例",
+        "level": "local_regulation",
+        "jurisdiction": "CN-SZ",
+        "n_clauses": 6,
+        "instrument_date": "2023-12-29",
+        "effective_date": "2024-02-01",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D15",
+        "title": "北京市无人驾驶航空器管理规定",
+        "level": "local_regulation",
+        "jurisdiction": "CN-BJ",
+        "n_clauses": 5,
+        "instrument_date": "2026-03-27",
+        "effective_date": "2026-05-01",
+        "split": "dev"
+      },
+      {
+        "doc_id": "D16",
+        "title": "北京市无人驾驶航空器管理规定（2026年9月修订）",
+        "level": "local_regulation",
+        "jurisdiction": "CN-BJ",
+        "n_clauses": 4,
+        "instrument_date": "2026-09-11",
+        "effective_date": "2026-11-15",
+        "split": "dev"
+      },
+      {
+        "doc_id": "E01",
+        "title": "Commission Implementing Regulation (EU) 2021/664 (U-space)",
+        "level": "external_standard",
+        "jurisdiction": "EU",
+        "n_clauses": 2,
+        "instrument_date": "2021-04-22",
+        "effective_date": "2023-01-26",
+        "split": "dev"
+      },
+      {
+        "doc_id": "E02",
+        "title": "UAS Traffic Management (UTM) Concept of Operations v2.0",
+        "level": "external_standard",
+        "jurisdiction": "US",
+        "n_clauses": 1,
+        "instrument_date": "2020-03",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "E03",
+        "title": "JARUS Guidelines on Specific Operations Risk Assessment (SORA) v2.5",
+        "level": "external_standard",
+        "jurisdiction": "INTL",
+        "n_clauses": 1,
+        "instrument_date": "2024-05-13",
+        "effective_date": null,
+        "split": "dev"
+      },
+      {
+        "doc_id": "H01",
+        "title": "无人驾驶航空器飞行管理暂行条例（保险与应急条款）",
+        "level": "admin_regulation",
+        "jurisdiction": "CN-NATIONAL",
+        "n_clauses": 6,
+        "instrument_date": "2023-05-31",
+        "effective_date": "2024-01-01",
+        "split": "heldout"
+      },
+      {
+        "doc_id": "H02",
+        "title": "深圳经济特区低空经济产业促进条例（设施与培训条款）",
+        "level": "local_regulation",
+        "jurisdiction": "CN-SZ",
+        "n_clauses": 4,
+        "instrument_date": "2023-12-29",
+        "effective_date": "2024-02-01",
+        "split": "heldout"
+      },
+      {
+        "doc_id": "H03",
+        "title": "北京市无人驾驶航空器管理规定（运行管理条款）",
+        "level": "local_regulation",
+        "jurisdiction": "CN-BJ",
+        "n_clauses": 5,
+        "instrument_date": "2026-09-11",
+        "effective_date": "2026-11-15",
+        "split": "heldout"
+      },
+      {
+        "doc_id": "H04",
+        "title": "天津市无人驾驶航空器管制空域管理实施细则",
+        "level": "local_notice",
+        "jurisdiction": "CN-TJ",
+        "n_clauses": 4,
+        "instrument_date": "2026-09-30",
+        "effective_date": "2026-10-15",
+        "split": "heldout"
+      }
+    ]
+  },
+  "compile": {
+    "S1_keyword": {
+      "n_clauses": 55,
+      "n_props": 45,
+      "n_rules": 30,
+      "precision": 0.21875,
+      "recall": 0.2692307692307692,
+      "f1": 0.2413793103448276,
+      "exact_match": 0.2692307692307692,
+      "compilability_accuracy": 0.5454545454545454,
+      "compilability_macro_f1": 0.3529411764705882,
+      "compilability_f1_true": 0.7058823529411764,
+      "compilability_f1_false": 0.0,
+      "failure_mode_agreement": 0.0,
+      "conflict_summary": {
+        "candidates": 7,
+        "resolved_by_rank": 4,
+        "resolved_by_posterior": 0,
+        "resolved_by_specialis": 0,
+        "rejected_spurious": 1,
+        "unresolved": 2,
+        "by_kind": {
+          "modality": 7,
+          "threshold": 0,
+          "duplication": 0
+        }
+      },
+      "validation_raw": {
+        "conforms": false,
+        "violations": 3,
+        "messages": [
+          "two rules with the same subject/action carry opposite deontic modalities",
+          "two rules with the same subject/action carry opposite deontic modalities",
+          "two rules with the same subject/action carry opposite deontic modalities"
+        ],
+        "n_rules": 45
+      },
+      "validation_merged": {
+        "conforms": true,
+        "violations": 0,
+        "messages": [],
+        "n_rules": 30
+      },
+      "n_repaired": 0
+    },
+    "S2_frame": {
+      "n_clauses": 55,
+      "n_props": 39,
+      "n_rules": 33,
+      "precision": 0.696969696969697,
+      "recall": 0.8846153846153846,
+      "f1": 0.7796610169491526,
+      "exact_match": 0.8846153846153846,
+      "compilability_accuracy": 0.8,
+      "compilability_macro_f1": 0.7931623931623932,
+      "compilability_f1_true": 0.8307692307692307,
+      "compilability_f1_false": 0.7555555555555556,
+      "failure_mode_agreement": 0.0,
+      "conflict_summary": {
+        "candidates": 3,
+        "resolved_by_rank": 0,
+        "resolved_by_posterior": 2,
+        "resolved_by_specialis": 0,
+        "rejected_spurious": 1,
+        "unresolved": 0,
+        "by_kind": {
+          "modality": 3,
+          "threshold": 0,
+          "duplication": 0
+        }
+      },
+      "validation_raw": {
+        "conforms": true,
+        "violations": 0,
+        "messages": [],
+        "n_rules": 39
+      },
+      "validation_merged": {
+        "conforms": true,
+        "violations": 0,
+        "messages": [],
+        "n_rules": 33
+      },
+      "n_repaired": 7
+    },
+    "S3_repair": {
+      "n_clauses": 55,
+      "n_props": 34,
+      "n_rules": 26,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "exact_match": 1.0,
+      "compilability_accuracy": 1.0,
+      "compilability_macro_f1": 1.0,
+      "compilability_f1_true": 1.0,
+      "compilability_f1_false": 1.0,
+      "failure_mode_agreement": 0.88,
+      "conflict_summary": {
+        "candidates": 2,
+        "resolved_by_rank": 0,
+        "resolved_by_posterior": 1,
+        "resolved_by_specialis": 0,
+        "rejected_spurious": 1,
+        "unresolved": 0,
+        "by_kind": {
+          "modality": 2,
+          "threshold": 0,
+          "duplication": 0
+        }
+      },
+      "validation_raw": {
+        "conforms": true,
+        "violations": 0,
+        "messages": [],
+        "n_rules": 34
+      },
+      "validation_merged": {
+        "conforms": true,
+        "violations": 0,
+        "messages": [],
+        "n_rules": 26
+      },
+      "n_repaired": 8,
+      "components": {
+        "n_clauses": 30,
+        "deontic_acc": 1.0,
+        "subject_acc": 1.0,
+        "action_acc": 1.0,
+        "condition_jaccard": 0.8066666666666668,
+        "exact_acc": 0.7666666666666667,
+        "field_mean": 0.9516666666666667
+      },
+      "conflicts": [
+        {
+          "kind": "modality",
+          "a": "D13-C003-P1",
+          "b": "D14-C005-P1",
+          "detail": "operator/share_operational_data: obligation vs prohibition",
+          "resolution": "object_mismatch",
+          "winner": null,
+          "rationale": "source objects '['管制空域']' vs '['个人信息', '商业秘密', '国家秘密', '飞行活动']' do not intersect",
+          "spurious": true
+        },
+        {
+          "kind": "modality",
+          "a": "D14-C005-P1",
+          "b": "D16-C003-P1",
+          "detail": "operator/share_operational_data: prohibition vs obligation",
+          "resolution": "lex_posterior",
+          "winner": "D16-C003-P1",
+          "rationale": "same rank; later instrument D16 (2023-12-29) prevails",
+          "spurious": false
+        }
+      ],
+      "rulebase_size": 26
+    }
+  },
+  "heldout": {
+    "S2_frame": {
+      "n_clauses": 19,
+      "n_props": 17,
+      "precision": 0.2,
+      "recall": 0.25,
+      "f1": 0.22222222222222224,
+      "compilability_accuracy": 0.8947368421052632,
+      "failure_mode_agreement": 0.0,
+      "components": {
+        "n_clauses": 16,
+        "deontic_acc": 0.9375,
+        "subject_acc": 0.75,
+        "action_acc": 0.5,
+        "condition_jaccard": 0.65625,
+        "exact_acc": 0.1875,
+        "field_mean": 0.7109375
+      },
+      "fp_pids": [
+        "H02-C001-P1",
+        "H04-C002-P1",
+        "H02-C002-P1",
+        "H02-C004-P1",
+        "H01-C004-P1",
+        "H03-C001-P1",
+        "H03-C004-P1",
+        "H01-C001-P1",
+        "H04-C001-P1",
+        "H01-C003-P1",
+        "H03-C005-P1",
+        "H01-C002-P1"
+      ],
+      "fn_pids": [
+        "H01-C001-G1",
+        "H02-C001-G1",
+        "H04-C003-G1",
+        "H01-C004-G1",
+        "H03-C004-G1",
+        "H01-C005-G1",
+        "H03-C001-G1",
+        "H02-C004-G1",
+        "H03-C002-G1"
+      ]
+    },
+    "S3_repair": {
+      "n_clauses": 19,
+      "n_props": 16,
+      "precision": 0.21428571428571427,
+      "recall": 0.25,
+      "f1": 0.23076923076923075,
+      "compilability_accuracy": 0.9473684210526315,
+      "failure_mode_agreement": 0.6666666666666666,
+      "components": {
+        "n_clauses": 16,
+        "deontic_acc": 0.9375,
+        "subject_acc": 0.75,
+        "action_acc": 0.5,
+        "condition_jaccard": 0.65625,
+        "exact_acc": 0.1875,
+        "field_mean": 0.7109375
+      },
+      "fp_pids": [
+        "H02-C001-P1",
+        "H04-C002-P1",
+        "H02-C004-P1",
+        "H01-C004-P1",
+        "H03-C001-P1",
+        "H03-C004-P1",
+        "H01-C001-P1",
+        "H04-C001-P1",
+        "H01-C003-P1",
+        "H03-C005-P1",
+        "H01-C002-P1"
+      ],
+      "fn_pids": [
+        "H01-C001-G1",
+        "H02-C001-G1",
+        "H04-C003-G1",
+        "H01-C004-G1",
+        "H03-C004-G1",
+        "H01-C005-G1",
+        "H03-C001-G1",
+        "H02-C004-G1",
+        "H03-C002-G1"
+      ]
+    }
+  },
+  "router": {
+    "base_strategy": "S2_frame",
+    "router": {
+      "auc": 0.6907894736842105,
+      "average_precision": 0.5216991242550023,
+      "n_train": 55,
+      "n_test": 55,
+      "n_pos": 19,
+      "threshold": 0.0880178336385721,
+      "precision_at_threshold": 0.4838709677419355,
+      "recall_at_threshold": 0.7894736842105263,
+      "importances": {
+        "confidence": 0.35040583226872624,
+        "n_conditions": 0.25596387862272374,
+        "clause_len": 0.1620598937740695,
+        "n_props": 0.05899841229929074,
+        "action_found": 0.05048290765833958,
+        "pred_compilable": 0.03723815589426866,
+        "level_rank": 0.03251208538237515,
+        "subject_found": 0.021074267626693656,
+        "n_sentences": 0.014780474157960187,
+        "has_definitional": 0.011682324887787355,
+        "n_condition_names": 0.0021847579792318387,
+        "has_enum": 0.0015203838907620975,
+        "has_sanction": 0.001096625557771168,
+        "n_modal": 0.0,
+        "has_proviso": 0.0,
+        "has_cross_ref": 0.0,
+        "has_discretionary": 0.0,
+        "modal_found": 0.0
+      },
+      "fold_aucs": [
+        0.7870370370370371,
+        0.7777777777777778,
+        0.6799999999999999,
+        0.7142857142857142,
+        0.6666666666666666
+      ]
+    },
+    "base_f1": 0.7666666666666667,
+    "best_f1": 0.9811320754716981,
+    "target_f1": 0.9382389937106919,
+    "curves": {
+      "learned": [
+        {
+          "k": 0,
+          "expert_minutes": 0.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 1,
+          "expert_minutes": 2.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 2,
+          "expert_minutes": 5.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 3,
+          "expert_minutes": 7.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 4,
+          "expert_minutes": 10.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 5,
+          "expert_minutes": 12.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 6,
+          "expert_minutes": 15.0,
+          "f1": 0.7796610169491525
+        },
+        {
+          "k": 7,
+          "expert_minutes": 17.5,
+          "f1": 0.7796610169491525
+        },
+        {
+          "k": 8,
+          "expert_minutes": 20.0,
+          "f1": 0.7796610169491525
+        },
+        {
+          "k": 9,
+          "expert_minutes": 22.5,
+          "f1": 0.7796610169491525
+        },
+        {
+          "k": 10,
+          "expert_minutes": 25.0,
+          "f1": 0.7796610169491525
+        },
+        {
+          "k": 11,
+          "expert_minutes": 27.5,
+          "f1": 0.7931034482758621
+        },
+        {
+          "k": 12,
+          "expert_minutes": 30.0,
+          "f1": 0.7931034482758621
+        },
+        {
+          "k": 13,
+          "expert_minutes": 32.5,
+          "f1": 0.7931034482758621
+        },
+        {
+          "k": 14,
+          "expert_minutes": 35.0,
+          "f1": 0.8070175438596491
+        },
+        {
+          "k": 15,
+          "expert_minutes": 37.5,
+          "f1": 0.8214285714285715
+        },
+        {
+          "k": 16,
+          "expert_minutes": 40.0,
+          "f1": 0.8214285714285715
+        },
+        {
+          "k": 17,
+          "expert_minutes": 42.5,
+          "f1": 0.8214285714285715
+        },
+        {
+          "k": 18,
+          "expert_minutes": 45.0,
+          "f1": 0.8214285714285715
+        },
+        {
+          "k": 19,
+          "expert_minutes": 47.5,
+          "f1": 0.8363636363636364
+        },
+        {
+          "k": 20,
+          "expert_minutes": 50.0,
+          "f1": 0.8363636363636364
+        },
+        {
+          "k": 21,
+          "expert_minutes": 52.5,
+          "f1": 0.8571428571428572
+        },
+        {
+          "k": 22,
+          "expert_minutes": 55.0,
+          "f1": 0.8571428571428572
+        },
+        {
+          "k": 23,
+          "expert_minutes": 57.5,
+          "f1": 0.8571428571428572
+        },
+        {
+          "k": 24,
+          "expert_minutes": 60.0,
+          "f1": 0.8571428571428572
+        },
+        {
+          "k": 25,
+          "expert_minutes": 62.5,
+          "f1": 0.8727272727272727
+        },
+        {
+          "k": 26,
+          "expert_minutes": 65.0,
+          "f1": 0.8727272727272727
+        },
+        {
+          "k": 27,
+          "expert_minutes": 67.5,
+          "f1": 0.8727272727272727
+        },
+        {
+          "k": 28,
+          "expert_minutes": 70.0,
+          "f1": 0.8727272727272727
+        },
+        {
+          "k": 29,
+          "expert_minutes": 72.5,
+          "f1": 0.8888888888888888
+        },
+        {
+          "k": 30,
+          "expert_minutes": 75.0,
+          "f1": 0.8888888888888888
+        },
+        {
+          "k": 31,
+          "expert_minutes": 77.5,
+          "f1": 0.9454545454545454
+        },
+        {
+          "k": 32,
+          "expert_minutes": 80.0,
+          "f1": 0.9454545454545454
+        },
+        {
+          "k": 33,
+          "expert_minutes": 82.5,
+          "f1": 0.9454545454545454
+        },
+        {
+          "k": 34,
+          "expert_minutes": 85.0,
+          "f1": 0.9454545454545454
+        },
+        {
+          "k": 35,
+          "expert_minutes": 87.5,
+          "f1": 0.9454545454545454
+        },
+        {
+          "k": 36,
+          "expert_minutes": 90.0,
+          "f1": 0.9629629629629629
+        },
+        {
+          "k": 37,
+          "expert_minutes": 92.5,
+          "f1": 0.9629629629629629
+        },
+        {
+          "k": 38,
+          "expert_minutes": 95.0,
+          "f1": 0.9629629629629629
+        },
+        {
+          "k": 39,
+          "expert_minutes": 97.5,
+          "f1": 0.9629629629629629
+        },
+        {
+          "k": 40,
+          "expert_minutes": 100.0,
+          "f1": 0.9629629629629629
+        }
+      ],
+      "confidence": [
+        {
+          "k": 0,
+          "expert_minutes": 0.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 1,
+          "expert_minutes": 2.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 2,
+          "expert_minutes": 5.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 3,
+          "expert_minutes": 7.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 4,
+          "expert_minutes": 10.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 5,
+          "expert_minutes": 12.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 6,
+          "expert_minutes": 15.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 7,
+          "expert_minutes": 17.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 8,
+          "expert_minutes": 20.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 9,
+          "expert_minutes": 22.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 10,
+          "expert_minutes": 25.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 11,
+          "expert_minutes": 27.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 12,
+          "expert_minutes": 30.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 13,
+          "expert_minutes": 32.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 14,
+          "expert_minutes": 35.0,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 15,
+          "expert_minutes": 37.5,
+          "f1": 0.7666666666666667
+        },
+        {
+          "k": 16,
+          "expert_minutes": 40.0,
+          "f1": 0.819672131147541
+        },
+        {
+          "k": 17,
+          "expert_minutes": 42.5,
+          "f1": 0.819672131147541
+        },
+        {
+          "k": 18,
+          "expert_minutes": 45.0,
+          "f1": 0.8333333333333334
+        },
+        {
+          "k": 19,
+          "expert_minutes": 47.5,
+          "f1": 0.8333333333333334
+        },
+        {
+          "k": 20,
+          "expert_minutes": 50.0,
+          "f1": 0.847457627118644
+        },
+        {
+          "k": 21,
+          "expert_minutes": 52.5,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 22,
+          "expert_minutes": 55.0,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 23,
+          "expert_minutes": 57.5,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 24,
+          "expert_minutes": 60.0,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 25,
+          "expert_minutes": 62.5,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 26,
+          "expert_minutes": 65.0,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 27,
+          "expert_minutes": 67.5,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 28,
+          "expert_minutes": 70.0,
+          "f1": 0.8666666666666665
+        },
+        {
+          "k": 29,
+          "expert_minutes": 72.5,
+          "f1": 0.8813559322033898
+        },
+        {
+          "k": 30,
+          "expert_minutes": 75.0,
+          "f1": 0.896551724137931
+        },
+        {
+          "k": 31,
+          "expert_minutes": 77.5,
+          "f1": 0.912280701754386
+        },
+        {
+          "k": 32,
+          "expert_minutes": 80.0,
+          "f1": 0.912280701754386
+        },
+        {
+          "k": 33,
+          "expert_minutes": 82.5,
+          "f1": 0.912280701754386
+        },
+        {
+          "k": 34,
+          "expert_minutes": 85.0,
+          "f1": 0.912280701754386
+        },
+        {
+          "k": 35,
+          "expert_minutes": 87.5,
+          "f1": 0.912280701754386
+        },
+        {
+          "k": 36,
+          "expert_minutes": 90.0,
+          "f1": 0.9285714285714286
+        },
+        {
+          "k": 37,
+          "expert_minutes": 92.5,
+          "f1": 0.9285714285714286
+        },
+        {
+          "k": 38,
+          "expert_minutes": 95.0,
+          "f1": 0.9285714285714286
+        },
+        {
+          "k": 39,
+          "expert_minutes": 97.5,
+          "f1": 0.9285714285714286
+        },
+        {
+          "k": 40,
+          "expert_minutes": 100.0,
+          "f1": 0.9454545454545454
+        }
+      ],
+      "random": [
+        {
+          "k": 0,
+          "expert_minutes": 0.0,
+          "f1": 0.7666666666666668
+        },
+        {
+          "k": 1,
+          "expert_minutes": 2.5,
+          "f1": 0.7686158192090398
+        },
+        {
+          "k": 2,
+          "expert_minutes": 5.0,
+          "f1": 0.7699152542372883
+        },
+        {
+          "k": 3,
+          "expert_minutes": 7.5,
+          "f1": 0.7731638418079096
+        },
+        {
+          "k": 4,
+          "expert_minutes": 10.0,
+          "f1": 0.7731638418079096
+        },
+        {
+          "k": 5,
+          "expert_minutes": 12.5,
+          "f1": 0.7731638418079096
+        },
+        {
+          "k": 6,
+          "expert_minutes": 15.0,
+          "f1": 0.775157802454705
+        },
+        {
+          "k": 7,
+          "expert_minutes": 17.5,
+          "f1": 0.7764796415351648
+        },
+        {
+          "k": 8,
+          "expert_minutes": 20.0,
+          "f1": 0.7805310836998987
+        },
+        {
+          "k": 9,
+          "expert_minutes": 22.5,
+          "f1": 0.7832201633276166
+        },
+        {
+          "k": 10,
+          "expert_minutes": 25.0,
+          "f1": 0.7882603060573221
+        },
+        {
+          "k": 11,
+          "expert_minutes": 27.5,
+          "f1": 0.7970056791334958
+        },
+        {
+          "k": 12,
+          "expert_minutes": 30.0,
+          "f1": 0.8010980330457459
+        },
+        {
+          "k": 13,
+          "expert_minutes": 32.5,
+          "f1": 0.8034933184538893
+        },
+        {
+          "k": 14,
+          "expert_minutes": 35.0,
+          "f1": 0.8062874164985333
+        },
+        {
+          "k": 15,
+          "expert_minutes": 37.5,
+          "f1": 0.8084396410107196
+        },
+        {
+          "k": 16,
+          "expert_minutes": 40.0,
+          "f1": 0.8101404008003165
+        },
+        {
+          "k": 17,
+          "expert_minutes": 42.5,
+          "f1": 0.8171830292885447
+        },
+        {
+          "k": 18,
+          "expert_minutes": 45.0,
+          "f1": 0.8228642582229495
+        },
+        {
+          "k": 19,
+          "expert_minutes": 47.5,
+          "f1": 0.8257382865140162
+        },
+        {
+          "k": 20,
+          "expert_minutes": 50.0,
+          "f1": 0.8301003142120218
+        },
+        {
+          "k": 21,
+          "expert_minutes": 52.5,
+          "f1": 0.8315848664752046
+        },
+        {
+          "k": 22,
+          "expert_minutes": 55.0,
+          "f1": 0.8344666179022818
+        },
+        {
+          "k": 23,
+          "expert_minutes": 57.5,
+          "f1": 0.8394007463667403
+        },
+        {
+          "k": 24,
+          "expert_minutes": 60.0,
+          "f1": 0.8448223181204817
+        },
+        {
+          "k": 25,
+          "expert_minutes": 62.5,
+          "f1": 0.8504352139965355
+        },
+        {
+          "k": 26,
+          "expert_minutes": 65.0,
+          "f1": 0.8511819672432888
+        },
+        {
+          "k": 27,
+          "expert_minutes": 67.5,
+          "f1": 0.8566137514351857
+        },
+        {
+          "k": 28,
+          "expert_minutes": 70.0,
+          "f1": 0.8612386428571946
+        },
+        {
+          "k": 29,
+          "expert_minutes": 72.5,
+          "f1": 0.8642759972148756
+        },
+        {
+          "k": 30,
+          "expert_minutes": 75.0,
+          "f1": 0.8707397581438616
+        },
+        {
+          "k": 31,
+          "expert_minutes": 77.5,
+          "f1": 0.8793721847345459
+        },
+        {
+          "k": 32,
+          "expert_minutes": 80.0,
+          "f1": 0.8858036041922812
+        },
+        {
+          "k": 33,
+          "expert_minutes": 82.5,
+          "f1": 0.8893790200045391
+        },
+        {
+          "k": 34,
+          "expert_minutes": 85.0,
+          "f1": 0.8945067884853021
+        },
+        {
+          "k": 35,
+          "expert_minutes": 87.5,
+          "f1": 0.9006466963357364
+        },
+        {
+          "k": 36,
+          "expert_minutes": 90.0,
+          "f1": 0.9022773010607148
+        },
+        {
+          "k": 37,
+          "expert_minutes": 92.5,
+          "f1": 0.9090553061939565
+        },
+        {
+          "k": 38,
+          "expert_minutes": 95.0,
+          "f1": 0.9115797873033431
+        },
+        {
+          "k": 39,
+          "expert_minutes": 97.5,
+          "f1": 0.9148368670389523
+        },
+        {
+          "k": 40,
+          "expert_minutes": 100.0,
+          "f1": 0.9218830930002726
+        }
+      ]
+    },
+    "breakeven": {
+      "learned": 31,
+      "confidence": 40,
+      "random": null
+    },
+    "n_needs_edit": 19,
+    "n_clauses": 55,
+    "heldout": {
+      "auc": 0.6499999999999999,
+      "curve": [
+        {
+          "k": 0,
+          "expert_minutes": 0.0,
+          "f1": 0.22222222222222224
+        },
+        {
+          "k": 1,
+          "expert_minutes": 2.5,
+          "f1": 0.23076923076923075
+        },
+        {
+          "k": 2,
+          "expert_minutes": 5.0,
+          "f1": 0.30769230769230765
+        },
+        {
+          "k": 3,
+          "expert_minutes": 7.5,
+          "f1": 0.3846153846153846
+        },
+        {
+          "k": 4,
+          "expert_minutes": 10.0,
+          "f1": 0.4615384615384615
+        },
+        {
+          "k": 5,
+          "expert_minutes": 12.5,
+          "f1": 0.5384615384615384
+        },
+        {
+          "k": 6,
+          "expert_minutes": 15.0,
+          "f1": 0.5925925925925926
+        },
+        {
+          "k": 7,
+          "expert_minutes": 17.5,
+          "f1": 0.6666666666666665
+        },
+        {
+          "k": 8,
+          "expert_minutes": 20.0,
+          "f1": 0.6923076923076924
+        },
+        {
+          "k": 9,
+          "expert_minutes": 22.5,
+          "f1": 0.6923076923076924
+        },
+        {
+          "k": 10,
+          "expert_minutes": 25.0,
+          "f1": 0.6923076923076924
+        },
+        {
+          "k": 11,
+          "expert_minutes": 27.5,
+          "f1": 0.7692307692307692
+        },
+        {
+          "k": 12,
+          "expert_minutes": 30.0,
+          "f1": 0.8461538461538461
+        },
+        {
+          "k": 13,
+          "expert_minutes": 32.5,
+          "f1": 0.8799999999999999
+        },
+        {
+          "k": 14,
+          "expert_minutes": 35.0,
+          "f1": 0.923076923076923
+        },
+        {
+          "k": 15,
+          "expert_minutes": 37.5,
+          "f1": 0.9600000000000001
+        },
+        {
+          "k": 16,
+          "expert_minutes": 40.0,
+          "f1": 0.9600000000000001
+        },
+        {
+          "k": 17,
+          "expert_minutes": 42.5,
+          "f1": 0.9600000000000001
+        },
+        {
+          "k": 18,
+          "expert_minutes": 45.0,
+          "f1": 1.0
+        },
+        {
+          "k": 19,
+          "expert_minutes": 47.5,
+          "f1": 1.0
+        }
+      ],
+      "base_f1": 0.22222222222222224,
+      "best_f1": 1.0,
+      "order": [
+        "H04-C001",
+        "H03-C004",
+        "H02-C001",
+        "H01-C001",
+        "H03-C001",
+        "H02-C004",
+        "H03-C002",
+        "H03-C005",
+        "H01-C006",
+        "H04-C004",
+        "H01-C004",
+        "H01-C002",
+        "H01-C003",
+        "H01-C005",
+        "H02-C002",
+        "H02-C003",
+        "H03-C003",
+        "H04-C002",
+        "H04-C003"
+      ]
+    }
+  },
+  "classification": {
+    "reference": {
+      "per_jurisdiction": {
+        "CN-BJ": {
+          "predicted": "capital_core",
+          "gold": "capital_core",
+          "correct": true,
+          "chain": [
+            "T1",
+            "T2",
+            "T6"
+          ]
+        },
+        "CN-TJ": {
+          "predicted": "dense_hub",
+          "gold": "dense_hub",
+          "correct": true,
+          "chain": [
+            "T2",
+            "T3",
+            "T6"
+          ]
+        },
+        "CN-SZ": {
+          "predicted": "market_driven",
+          "gold": "market_driven",
+          "correct": true,
+          "chain": [
+            "T5",
+            "T3",
+            "T6"
+          ]
+        },
+        "CN-CD": {
+          "predicted": "mountainous",
+          "gold": "mountainous",
+          "correct": true,
+          "chain": [
+            "T4",
+            "T6"
+          ]
+        },
+        "CN-HN": {
+          "predicted": "border_coastal",
+          "gold": "border_coastal",
+          "correct": true,
+          "chain": [
+            "T3",
+            "T6"
+          ]
+        },
+        "CN-JL": {
+          "predicted": "sparse_resource",
+          "gold": "sparse_resource",
+          "correct": true,
+          "chain": [
+            "T5b",
+            "T4",
+            "T6"
+          ]
+        }
+      },
+      "accuracy": 1.0,
+      "n": 6
+    },
+    "benchmark": {
+      "noise_0.08": {
+        "rule_accuracy": 0.86,
+        "ml_accuracy": {
+          "decision_tree": 0.9666666666666667,
+          "logistic": 0.9833333333333333,
+          "random_forest": 0.9916666666666667
+        },
+        "rule_chain_length": 2.1016666666666666,
+        "n": 600,
+        "confusion": {
+          "capital_core": {
+            "capital_core": 69,
+            "dense_hub": 30,
+            "sparse_resource": 1
+          },
+          "dense_hub": {
+            "dense_hub": 97,
+            "sparse_resource": 3
+          },
+          "market_driven": {
+            "market_driven": 83,
+            "dense_hub": 17
+          },
+          "mountainous": {
+            "mountainous": 99,
+            "dense_hub": 1
+          },
+          "border_coastal": {
+            "sparse_resource": 29,
+            "border_coastal": 71
+          },
+          "sparse_resource": {
+            "sparse_resource": 97,
+            "mountainous": 3
+          }
+        }
+      },
+      "noise_0.12": {
+        "rule_accuracy": 0.7816666666666666,
+        "ml_accuracy": {
+          "decision_tree": 0.9333333333333333,
+          "logistic": 0.975,
+          "random_forest": 0.975
+        },
+        "rule_chain_length": 2.06,
+        "n": 600,
+        "confusion": {
+          "capital_core": {
+            "dense_hub": 43,
+            "capital_core": 54,
+            "sparse_resource": 3
+          },
+          "dense_hub": {
+            "dense_hub": 88,
+            "market_driven": 5,
+            "sparse_resource": 7
+          },
+          "market_driven": {
+            "market_driven": 77,
+            "dense_hub": 20,
+            "border_coastal": 2,
+            "sparse_resource": 1
+          },
+          "mountainous": {
+            "mountainous": 96,
+            "sparse_resource": 2,
+            "market_driven": 1,
+            "dense_hub": 1
+          },
+          "border_coastal": {
+            "sparse_resource": 34,
+            "border_coastal": 63,
+            "mountainous": 3
+          },
+          "sparse_resource": {
+            "sparse_resource": 91,
+            "mountainous": 9
+          }
+        }
+      },
+      "noise_0.18": {
+        "rule_accuracy": 0.6716666666666666,
+        "ml_accuracy": {
+          "decision_tree": 0.85,
+          "logistic": 0.9166666666666666,
+          "random_forest": 0.9125
+        },
+        "rule_chain_length": 2.075,
+        "n": 600,
+        "confusion": {
+          "capital_core": {
+            "dense_hub": 40,
+            "capital_core": 44,
+            "sparse_resource": 15,
+            "market_driven": 1
+          },
+          "dense_hub": {
+            "sparse_resource": 17,
+            "dense_hub": 74,
+            "market_driven": 7,
+            "border_coastal": 1,
+            "mountainous": 1
+          },
+          "market_driven": {
+            "market_driven": 69,
+            "dense_hub": 23,
+            "border_coastal": 5,
+            "sparse_resource": 3
+          },
+          "mountainous": {
+            "mountainous": 83,
+            "sparse_resource": 8,
+            "market_driven": 4,
+            "dense_hub": 5
+          },
+          "border_coastal": {
+            "sparse_resource": 37,
+            "border_coastal": 52,
+            "mountainous": 8,
+            "market_driven": 2,
+            "dense_hub": 1
+          },
+          "sparse_resource": {
+            "sparse_resource": 81,
+            "mountainous": 17,
+            "border_coastal": 2
+          }
+        }
+      }
+    },
+    "airspace_regime": {
+      "CN-NATIONAL": {
+        "basis": "D01-C003, D04-C002",
+        "permitted_fraction": 0.75,
+        "note": "真高120米以下非管制空域为适飞空域"
+      },
+      "CN-JL": {
+        "basis": "D12-C001",
+        "permitted_fraction": 0.7,
+        "note": "省级公告沿用国家口径，适飞范围扩大"
+      },
+      "CN-TJ": {
+        "basis": "D13-C001",
+        "permitted_fraction": 0.0,
+        "note": "全市域划为管制空域"
+      },
+      "CN-BJ": {
+        "basis": "D15-C001, D16-C001",
+        "permitted_fraction": 0.0,
+        "note": "全市域划为管制空域，两版一致"
+      },
+      "CN-SZ": {
+        "basis": "D14-C001..C006",
+        "permitted_fraction": 0.75,
+        "note": "产业促进型法规，不改空域类别"
+      }
+    }
+  },
+  "allocation": {
+    "floor_total": 8.43,
+    "max_total": 13.560000000000002,
+    "budgets": [
+      12.149,
+      12.408,
+      12.667,
+      12.926,
+      13.186,
+      13.445
+    ],
+    "sweep": [
+      {
+        "budget": 12.149,
+        "tiered_total_cost": 12.1,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.37281924320511156,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": -0.032080443530628555,
+        "mean_completion_tiered": 0.851,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 4
+      },
+      {
+        "budget": 12.408,
+        "tiered_total_cost": 12.34,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.3690278441739317,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": -0.021584663430702422,
+        "mean_completion_tiered": 0.8559999999999999,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 5
+      },
+      {
+        "budget": 12.667,
+        "tiered_total_cost": 12.579999999999998,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.35414449854749624,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": 0.01961709918030141,
+        "mean_completion_tiered": 0.8639999999999999,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 5
+      },
+      {
+        "budget": 12.926,
+        "tiered_total_cost": 12.819999999999999,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.3465012145860518,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": 0.04077610329484538,
+        "mean_completion_tiered": 0.8704999999999999,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 5
+      },
+      {
+        "budget": 13.186,
+        "tiered_total_cost": 12.999999999999998,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.34158794348922905,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": 0.054377576676961636,
+        "mean_completion_tiered": 0.8729999999999999,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 5
+      },
+      {
+        "budget": 13.445,
+        "tiered_total_cost": 13.219999999999999,
+        "uniform_total_cost": 12.120000000000001,
+        "mean_incident_tiered": 0.3382831707748794,
+        "mean_incident_uniform": 0.36123079895762755,
+        "relative_gain": 0.06352622270572206,
+        "mean_completion_tiered": 0.8744999999999999,
+        "mean_completion_uniform": 0.839,
+        "n_tiers_improved": 6
+      }
+    ],
+    "best": {
+      "budget": 13.445,
+      "tiered_total_cost": 13.219999999999999,
+      "uniform_total_cost": 12.120000000000001,
+      "mean_incident_tiered": 0.3382831707748794,
+      "mean_incident_uniform": 0.36123079895762755,
+      "relative_gain": 0.06352622270572206,
+      "mean_completion_tiered": 0.8744999999999999,
+      "mean_completion_uniform": 0.839,
+      "n_tiers_improved": 6,
+      "tiered": [
+        {
+          "tier": "capital_core",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "tiered_cost": 2.2600000000000002,
+          "tiered_incident": 0.32627979462303947,
+          "tiered_completion": 0.84,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.34300851741870664,
+          "uniform_completion": 0.8009999999999999,
+          "improvement": 0.048770575499285984
+        },
+        {
+          "tier": "dense_hub",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "tiered_cost": 2.2600000000000002,
+          "tiered_incident": 0.31981902181630384,
+          "tiered_completion": 0.87,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.33621649370673334,
+          "uniform_completion": 0.834,
+          "improvement": 0.048770575499286095
+        },
+        {
+          "tier": "market_driven",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "tiered_cost": 2.2600000000000002,
+          "tiered_incident": 0.3395955256449391,
+          "tiered_completion": 0.8999999999999999,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.3867410234545012,
+          "uniform_completion": 0.855,
+          "improvement": 0.1219045690794387
+        },
+        {
+          "tier": "mountainous",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "tiered_cost": 2.2600000000000002,
+          "tiered_incident": 0.36787944117144233,
+          "tiered_completion": 0.882,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.39062783535852114,
+          "uniform_completion": 0.852,
+          "improvement": 0.05823546641575139
+        },
+        {
+          "tier": "border_coastal",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "tiered_cost": 2.2600000000000002,
+          "tiered_incident": 0.2893842179390506,
+          "tiered_completion": 0.882,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.3042212640667041,
+          "uniform_completion": 0.849,
+          "improvement": 0.048770575499286206
+        },
+        {
+          "tier": "sparse_resource",
+          "tiered_levels": [
+            2,
+            2,
+            2,
+            1,
+            2,
+            2
+          ],
+          "tiered_cost": 1.92,
+          "tiered_incident": 0.3867410234545012,
+          "tiered_completion": 0.873,
+          "uniform_levels": [
+            2,
+            2,
+            1,
+            2,
+            2,
+            2
+          ],
+          "uniform_cost": 2.02,
+          "uniform_incident": 0.4065696597405991,
+          "uniform_completion": 0.843,
+          "improvement": 0.048770575499286095
+        }
+      ]
+    },
+    "tiered": [
+      {
+        "tier": "capital_core",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.32627979462303947,
+        "tiered_completion": 0.84,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.34300851741870664,
+        "uniform_completion": 0.8009999999999999,
+        "improvement": 0.048770575499285984
+      },
+      {
+        "tier": "dense_hub",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.31981902181630384,
+        "tiered_completion": 0.87,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.33621649370673334,
+        "uniform_completion": 0.834,
+        "improvement": 0.048770575499286095
+      },
+      {
+        "tier": "market_driven",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.3395955256449391,
+        "tiered_completion": 0.8999999999999999,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.3867410234545012,
+        "uniform_completion": 0.855,
+        "improvement": 0.1219045690794387
+      },
+      {
+        "tier": "mountainous",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.36787944117144233,
+        "tiered_completion": 0.882,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.39062783535852114,
+        "uniform_completion": 0.852,
+        "improvement": 0.05823546641575139
+      },
+      {
+        "tier": "border_coastal",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "tiered_cost": 2.2600000000000002,
+        "tiered_incident": 0.2893842179390506,
+        "tiered_completion": 0.882,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.3042212640667041,
+        "uniform_completion": 0.849,
+        "improvement": 0.048770575499286206
+      },
+      {
+        "tier": "sparse_resource",
+        "tiered_levels": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ],
+        "tiered_cost": 1.92,
+        "tiered_incident": 0.3867410234545012,
+        "tiered_completion": 0.873,
+        "uniform_levels": [
+          2,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        "uniform_cost": 2.02,
+        "uniform_incident": 0.4065696597405991,
+        "uniform_completion": 0.843,
+        "improvement": 0.048770575499286095
+      }
+    ],
+    "mean_incident_tiered": 0.3382831707748794,
+    "mean_incident_uniform": 0.36123079895762755,
+    "mean_completion_tiered": 0.8744999999999999,
+    "mean_completion_uniform": 0.839
+  },
+  "protocol": {
+    "channels": {
+      "reliable": {
+        "P1": {
+          "satisfied": true,
+          "explored": 14,
+          "detail": "P1 成立：14 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+          "has_cex": false
+        },
+        "P2": {
+          "satisfied": true,
+          "explored": 14,
+          "detail": "P2 成立：14 个可达状态中未出现无法到达 CLOSE 的 ALERT 滞留状态（4 个 CLOSE 状态可达），不存在永久滞留的未确认 ALERT。",
+          "has_cex": false
+        },
+        "P3": {
+          "satisfied": true,
+          "explored": 14,
+          "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+          "has_cex": false
+        }
+      },
+      "lossy": {
+        "P1": {
+          "satisfied": true,
+          "explored": 22,
+          "detail": "P1 成立：22 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+          "has_cex": false
+        },
+        "P2": {
+          "satisfied": false,
+          "explored": 22,
+          "detail": "P2 被违反：22 个可达状态中有 2 个 ALERT 永久滞留状态（alert_pending、ALERT 已发、未 ACK、无在途消息，且无法到达 CLOSE）；通道 'lossy' 不能保证 ALERT 的最终送达。",
+          "has_cex": true
+        },
+        "P3": {
+          "satisfied": true,
+          "explored": 22,
+          "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+          "has_cex": false
+        }
+      },
+      "lossy_retry": {
+        "P1": {
+          "satisfied": true,
+          "explored": 46,
+          "detail": "P1 成立：46 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+          "has_cex": false
+        },
+        "P2": {
+          "satisfied": true,
+          "explored": 46,
+          "detail": "P2 成立：46 个可达状态中未出现无法到达 CLOSE 的 ALERT 滞留状态；另有 4 个「ALERT 已发、未 ACK、信道暂空」状态均为可重传恢复的暂态（4 个 CLOSE 状态可达），不存在永久滞留的未确认 ALERT。",
+          "has_cex": false
+        },
+        "P3": {
+          "satisfied": true,
+          "explored": 46,
+          "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+          "has_cex": false
+        }
+      }
+    },
+    "retry_boundary": [
+      {
+        "channel": "lossy",
+        "max_retries": 1,
+        "P1": true,
+        "P2": false,
+        "P3": true,
+        "explored": 22
+      },
+      {
+        "channel": "lossy",
+        "max_retries": 2,
+        "P1": true,
+        "P2": false,
+        "P3": true,
+        "explored": 22
+      },
+      {
+        "channel": "lossy",
+        "max_retries": 3,
+        "P1": true,
+        "P2": false,
+        "P3": true,
+        "explored": 22
+      },
+      {
+        "channel": "lossy",
+        "max_retries": 4,
+        "P1": true,
+        "P2": false,
+        "P3": true,
+        "explored": 22
+      },
+      {
+        "channel": "lossy",
+        "max_retries": 5,
+        "P1": true,
+        "P2": false,
+        "P3": true,
+        "explored": 22
+      },
+      {
+        "channel": "lossy_retry",
+        "max_retries": 1,
+        "P1": true,
+        "P2": true,
+        "P3": true,
+        "explored": 30
+      },
+      {
+        "channel": "lossy_retry",
+        "max_retries": 2,
+        "P1": true,
+        "P2": true,
+        "P3": true,
+        "explored": 46
+      },
+      {
+        "channel": "lossy_retry",
+        "max_retries": 3,
+        "P1": true,
+        "P2": true,
+        "P3": true,
+        "explored": 62
+      },
+      {
+        "channel": "lossy_retry",
+        "max_retries": 4,
+        "P1": true,
+        "P2": true,
+        "P3": true,
+        "explored": 78
+      },
+      {
+        "channel": "lossy_retry",
+        "max_retries": 5,
+        "P1": true,
+        "P2": true,
+        "P3": true,
+        "explored": 94
+      }
+    ],
+    "counterexample_text": "反例路径：6 个状态，5 个动作\n\n[00] <init> phase=idle b_app=0 b_applied=0 alert=-/- retries=0 in_flight=- last=- steps=0\n[01] --reg_send--> phase=registered b_app=0 b_applied=0 alert=-/- retries=0 in_flight=REGISTER last=REGISTER steps=1\n[02] --verify_ok--> phase=verified b_app=0 b_applied=0 alert=-/- retries=0 in_flight=VERIFY last=VERIFY steps=2\n[03] --delegate_send--> phase=delegated b_app=0 b_applied=0 alert=-/- retries=0 in_flight=DELEGATE last=DELEGATE steps=3\n[04] --b_alert--> phase=alert_pending b_app=0 b_applied=0 alert=issued/- retries=0 in_flight=ALERT last=ALERT steps=4\n[05] --drop:ALERT--> phase=alert_pending b_app=0 b_applied=0 alert=issued/- retries=0 in_flight=- last=ALERT steps=4\n\n诊断：末状态是 ALERT 永久滞留（P2 反例）。ALERT 已发出、从未被 ACK，且信道上已无该消息（in_flight=None）；当前通道没有可用的重传动作，状态机因此无法到达 CLOSE，告警被永久丢失。"
+  },
+  "calibration": {
+    "mechanisms": {
+      "L0": {
+        "mae_at": {
+          "30": 0.4277777777777772,
+          "90": 0.4277777777777772,
+          "180": 0.4277777777777772
+        },
+        "excess_events": 1836.0000000012153,
+        "conformal": null
+      },
+      "L1": {
+        "mae_at": {
+          "30": 0.4277777777777772,
+          "90": 0.4277777777777772,
+          "180": 0.4277777777777772
+        },
+        "excess_events": 1836.0000000012153,
+        "conformal": null
+      },
+      "L2": {
+        "mae_at": {
+          "30": 0.08389181317429516,
+          "90": 0.040150313897245285,
+          "180": 0.02461263363226436
+        },
+        "excess_events": 270.56578702636637,
+        "conformal": {
+          "alpha": 0.1,
+          "q": 9.88790359481871,
+          "empirical_coverage": 0.9007222222222222,
+          "mean_width": 19.77580718963742,
+          "n_calib": 18000
+        }
+      },
+      "L3": {
+        "mae_at": {
+          "30": 0.08051946232789035,
+          "90": 0.03828787919235573,
+          "180": 0.024310274919341183
+        },
+        "excess_events": 233.68720967252548,
+        "conformal": {
+          "alpha": 0.1,
+          "q": 9.362035113630519,
+          "empirical_coverage": 0.8993888888888889,
+          "mean_width": 18.724070227261038,
+          "n_calib": 18000
+        }
+      }
+    },
+    "l0_l1_identical": true,
+    "rollback": {
+      "detection_rate": 1.0,
+      "false_alarm_rate": 0.0,
+      "mean_delay_days": 22.79,
+      "median_delay_days": 23.0,
+      "p90_delay_days": 24.0,
+      "n_detected": 200,
+      "reps": 200,
+      "n_days": 180,
+      "true_drift_at": 90,
+      "drift_size": -0.35,
+      "threshold": 0.85,
+      "alpha": 0.05,
+      "min_days": 14,
+      "window": 30,
+      "direction": "down",
+      "sigma": 0.05
+    }
+  },
+  "simulation": {
+    "regimes": {
+      "R0 national frame": {
+        "regime": "R0 national frame",
+        "reps": 200,
+        "flights": {
+          "mean": 44998.18,
+          "se": 14.11621676935421,
+          "ci_low": 44970.51221513207,
+          "ci_high": 45025.84778486793
+        },
+        "incident_per_10k": {
+          "mean": 0.5335680478014992,
+          "se": 0.02428250035817963,
+          "ci_low": 0.4859743470994672,
+          "ci_high": 0.5811617485035313
+        },
+        "casualty_per_10k": {
+          "mean": 0.062223602499371866,
+          "se": 0.008800499070315852,
+          "ci_low": 0.044974624321552796,
+          "ci_high": 0.07947258067719093
+        },
+        "completion": {
+          "mean": 0.967578444041385,
+          "se": 5.7027757978636496e-05,
+          "ci_low": 0.9674666696357469,
+          "ci_high": 0.9676902184470232
+        },
+        "unauth_rate": {
+          "mean": 0.00012871848653896604,
+          "se": 7.3552835132640485e-06,
+          "ci_low": 0.00011430213085296851,
+          "ci_high": 0.00014313484222496357
+        },
+        "cancel_rate": {
+          "mean": 8.33014447479482e-05,
+          "se": 4.87151202382973e-06,
+          "ci_low": 7.375328118124193e-05,
+          "ci_high": 9.284960831465446e-05
+        },
+        "detect_rate": {
+          "mean": 4.820960405566662e-05,
+          "se": 3.4321843951337268e-06,
+          "ci_low": 4.148252264120451e-05,
+          "ci_high": 5.493668547012872e-05
+        },
+        "duplicates_per_cross": {
+          "mean": 0.2424293199487515,
+          "se": 0.00033730678151377036,
+          "ci_low": 0.2417681986569845,
+          "ci_high": 0.24309044124051848
+        },
+        "interrupt_rate": {
+          "mean": 0.17962692956535253,
+          "se": 0.0002843309776027826,
+          "ci_low": 0.1790696408492511,
+          "ci_high": 0.18018421828145398
+        },
+        "mean_delay_h": {
+          "mean": 3.6338720525112196,
+          "se": 0.002836560978831876,
+          "ci_low": 3.6283123929927092,
+          "ci_high": 3.63943171202973
+        },
+        "p95_delay_h": {
+          "mean": 7.608633,
+          "se": 0.009938155170653211,
+          "ci_low": 7.58915421586552,
+          "ci_high": 7.6281117841344805
+        },
+        "cost_per_1k": {
+          "mean": 18.9157438574083,
+          "se": 0.3702765376745578,
+          "ci_low": 18.19000184356617,
+          "ci_high": 19.641485871250435
+        }
+      },
+      "R1 uniform strict": {
+        "regime": "R1 uniform strict",
+        "reps": 200,
+        "flights": {
+          "mean": 35404.52,
+          "se": 11.150081596023858,
+          "ci_low": 35382.66584007179,
+          "ci_high": 35426.3741599282
+        },
+        "incident_per_10k": {
+          "mean": 0.9561165438069351,
+          "se": 0.03624469079428273,
+          "ci_low": 0.885076949850141,
+          "ci_high": 1.0271561377637293
+        },
+        "casualty_per_10k": {
+          "mean": 0.07757759989984318,
+          "se": 0.010375483915098174,
+          "ci_low": 0.05724165142625076,
+          "ci_high": 0.0979135483734356
+        },
+        "completion": {
+          "mean": 0.7634762954564716,
+          "se": 0.0001416487231017811,
+          "ci_low": 0.7631986639591921,
+          "ci_high": 0.763753926953751
+        },
+        "unauth_rate": {
+          "mean": 0.3735794859025414,
+          "se": 0.00015718042324744323,
+          "ci_low": 0.37327141227297644,
+          "ci_high": 0.3738875595321064
+        },
+        "cancel_rate": {
+          "mean": 0.21326551317989395,
+          "se": 0.00013859537350111804,
+          "ci_low": 0.21299386624783176,
+          "ci_high": 0.21353716011195614
+        },
+        "detect_rate": {
+          "mean": 0.17484594544326262,
+          "se": 0.00013853877964554401,
+          "ci_low": 0.17457440943515737,
+          "ci_high": 0.17511748145136788
+        },
+        "duplicates_per_cross": {
+          "mean": 1.0,
+          "se": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        },
+        "interrupt_rate": {
+          "mean": 0.12900124062880025,
+          "se": 0.0002898721869655985,
+          "ci_low": 0.1284330911423477,
+          "ci_high": 0.1295693901152528
+        },
+        "mean_delay_h": {
+          "mean": 5.998945991977194,
+          "se": 0.0007623574963735794,
+          "ci_low": 5.997451771284301,
+          "ci_high": 6.000440212670086
+        },
+        "p95_delay_h": {
+          "mean": 11.422362666666668,
+          "se": 0.0008231145166607448,
+          "ci_low": 11.420749362214012,
+          "ci_high": 11.423975971119324
+        },
+        "cost_per_1k": {
+          "mean": 110.52855420899087,
+          "se": 0.40947541982694846,
+          "ci_low": 109.72598238613006,
+          "ci_high": 111.33112603185168
+        }
+      },
+      "R2 uniform open, equal budget": {
+        "regime": "R2 uniform open, equal budget",
+        "reps": 200,
+        "flights": {
+          "mean": 45004.94,
+          "se": 14.732032988691666,
+          "ci_low": 44976.06521534217,
+          "ci_high": 45033.814784657836
+        },
+        "incident_per_10k": {
+          "mean": 0.4253890394522692,
+          "se": 0.021454324934869484,
+          "ci_low": 0.383338562579925,
+          "ci_high": 0.4674395163246134
+        },
+        "casualty_per_10k": {
+          "mean": 0.051020032220908486,
+          "se": 0.007494316158841627,
+          "ci_low": 0.0363311725495789,
+          "ci_high": 0.06570889189223808
+        },
+        "completion": {
+          "mean": 0.9677021645044087,
+          "se": 5.867784493406964e-05,
+          "ci_low": 0.9675871559283379,
+          "ci_high": 0.9678171730804795
+        },
+        "unauth_rate": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "cancel_rate": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "detect_rate": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "duplicates_per_cross": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "interrupt_rate": {
+          "mean": 0.17946367756269854,
+          "se": 0.0002957599146945193,
+          "ci_low": 0.17888398812989728,
+          "ci_high": 0.1800433669954998
+        },
+        "mean_delay_h": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "p95_delay_h": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "cost_per_1k": {
+          "mean": 9.326708837016044,
+          "se": 0.3198233563587035,
+          "ci_low": 8.699855058552986,
+          "ci_high": 9.953562615479102
+        }
+      },
+      "R3 tiered, equal budget": {
+        "regime": "R3 tiered, equal budget",
+        "reps": 200,
+        "flights": {
+          "mean": 40563.64,
+          "se": 13.161287911807396,
+          "ci_low": 40537.84387569286,
+          "ci_high": 40589.43612430714
+        },
+        "incident_per_10k": {
+          "mean": 0.4646797371596976,
+          "se": 0.023342457081789135,
+          "ci_low": 0.41892852127939095,
+          "ci_high": 0.5104309530400043
+        },
+        "casualty_per_10k": {
+          "mean": 0.0492738959477168,
+          "se": 0.007615897917026107,
+          "ci_low": 0.03434673603034563,
+          "ci_high": 0.06420105586508797
+        },
+        "completion": {
+          "mean": 0.8718821632983578,
+          "se": 0.0001260851415592506,
+          "ci_low": 0.8716350364209017,
+          "ci_high": 0.8721292901758139
+        },
+        "unauth_rate": {
+          "mean": 0.1747142984149185,
+          "se": 0.0001686341356088043,
+          "ci_low": 0.17438377550912526,
+          "ci_high": 0.17504482132071175
+        },
+        "cancel_rate": {
+          "mean": 0.09902099029376991,
+          "se": 0.00011942975354445973,
+          "ci_low": 0.09878690797682277,
+          "ci_high": 0.09925507261071706
+        },
+        "detect_rate": {
+          "mean": 0.09572271786591786,
+          "se": 0.00012151928273419387,
+          "ci_low": 0.09548454007175884,
+          "ci_high": 0.09596089566007689
+        },
+        "duplicates_per_cross": {
+          "mean": 0.6960945413929462,
+          "se": 0.00036017067456621895,
+          "ci_low": 0.6953886068707964,
+          "ci_high": 0.6968004759150961
+        },
+        "interrupt_rate": {
+          "mean": 0.16179815168044073,
+          "se": 0.0002896979073846091,
+          "ci_low": 0.1612303437819669,
+          "ci_high": 0.16236595957891456
+        },
+        "mean_delay_h": {
+          "mean": 6.037635940392493,
+          "se": 0.0006304576783407375,
+          "ci_low": 6.0364002433429444,
+          "ci_high": 6.038871637442041
+        },
+        "p95_delay_h": {
+          "mean": 11.442664333333333,
+          "se": 0.0012724638017424727,
+          "ci_low": 11.440170304281917,
+          "ci_high": 11.445158362384749
+        },
+        "cost_per_1k": {
+          "mean": 75.79839474986782,
+          "se": 0.2958158964885643,
+          "ci_low": 75.21859559275023,
+          "ci_high": 76.37819390698542
+        }
+      },
+      "R4 tiered + coordination": {
+        "regime": "R4 tiered + coordination",
+        "reps": 200,
+        "flights": {
+          "mean": 41551.015,
+          "se": 12.046160124442917,
+          "ci_low": 41527.40452615609,
+          "ci_high": 41574.62547384391
+        },
+        "incident_per_10k": {
+          "mean": 0.4669795760042261,
+          "se": 0.024480907511641312,
+          "ci_low": 0.41899699728140916,
+          "ci_high": 0.5149621547270431
+        },
+        "casualty_per_10k": {
+          "mean": 0.05662159936921297,
+          "se": 0.007442935916872732,
+          "ci_low": 0.04203344497214241,
+          "ci_high": 0.07120975376628352
+        },
+        "completion": {
+          "mean": 0.9148307163497837,
+          "se": 0.00011559157352156836,
+          "ci_low": 0.9146041568656814,
+          "ci_high": 0.9150572758338861
+        },
+        "unauth_rate": {
+          "mean": 0.11498725653485227,
+          "se": 0.00014516941989774538,
+          "ci_low": 0.11470272447185269,
+          "ci_high": 0.11527178859785185
+        },
+        "cancel_rate": {
+          "mean": 0.07686060845854749,
+          "se": 0.00011471732046855281,
+          "ci_low": 0.07663576251042913,
+          "ci_high": 0.07708545440666585
+        },
+        "detect_rate": {
+          "mean": 0.061514081243012046,
+          "se": 0.00010049100261775685,
+          "ci_low": 0.061317118877881244,
+          "ci_high": 0.06171104360814285
+        },
+        "duplicates_per_cross": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "interrupt_rate": {
+          "mean": 0.04610330640506119,
+          "se": 0.00015923386657276054,
+          "ci_low": 0.04579120802657858,
+          "ci_high": 0.0464154047835438
+        },
+        "mean_delay_h": {
+          "mean": 5.999828544897168,
+          "se": 3.082696135276828e-05,
+          "ci_low": 5.999768124052917,
+          "ci_high": 5.99988896574142
+        },
+        "p95_delay_h": {
+          "mean": 11.424000000000001,
+          "se": 1.2592259768388487e-16,
+          "ci_low": 11.424000000000001,
+          "ci_high": 11.424000000000001
+        },
+        "cost_per_1k": {
+          "mean": 57.132904689883866,
+          "se": 0.31755403629900236,
+          "ci_low": 56.51049877873782,
+          "ci_high": 57.75531060102991
+        }
+      },
+      "R5 tiered + capacity": {
+        "regime": "R5 tiered + capacity",
+        "reps": 200,
+        "flights": {
+          "mean": 43150.8,
+          "se": 13.282305832994737,
+          "ci_low": 43124.766680567336,
+          "ci_high": 43176.83331943267
+        },
+        "incident_per_10k": {
+          "mean": 0.44278639947870013,
+          "se": 0.024498094618469298,
+          "ci_low": 0.3947701340265003,
+          "ci_high": 0.49080266493089997
+        },
+        "casualty_per_10k": {
+          "mean": 0.0463786081076691,
+          "se": 0.006782214503437376,
+          "ci_low": 0.03308546768093184,
+          "ci_high": 0.059671748534406356
+        },
+        "completion": {
+          "mean": 0.9296188540503897,
+          "se": 0.00011382211548513524,
+          "ci_low": 0.9293957627040388,
+          "ci_high": 0.9298419453967406
+        },
+        "unauth_rate": {
+          "mean": 0.06862493799643712,
+          "se": 0.0001710535998607755,
+          "ci_low": 0.06828967294071,
+          "ci_high": 0.06896020305216424
+        },
+        "cancel_rate": {
+          "mean": 0.0410443480410646,
+          "se": 9.482012773357272e-05,
+          "ci_low": 0.040858500590706795,
+          "ci_high": 0.0412301954914224
+        },
+        "detect_rate": {
+          "mean": 0.035139650136968896,
+          "se": 0.00010301601711001011,
+          "ci_low": 0.034937738743433276,
+          "ci_high": 0.035341561530504516
+        },
+        "duplicates_per_cross": {
+          "mean": 0.6960562333743594,
+          "se": 0.0003627013856844891,
+          "ci_low": 0.6953453386584179,
+          "ci_high": 0.696767128090301
+        },
+        "interrupt_rate": {
+          "mean": 0.16297583956650818,
+          "se": 0.00028148895948355255,
+          "ci_low": 0.16242412120592042,
+          "ci_high": 0.16352755792709595
+        },
+        "mean_delay_h": {
+          "mean": 5.98412194782288,
+          "se": 0.000924269747272513,
+          "ci_low": 5.982310379118226,
+          "ci_high": 5.985933516527534
+        },
+        "p95_delay_h": {
+          "mean": 11.373239761904763,
+          "se": 0.0012992840041185095,
+          "ci_low": 11.370693165256691,
+          "ci_high": 11.375786358552835
+        },
+        "cost_per_1k": {
+          "mean": 52.399516688846774,
+          "se": 0.28409544839363343,
+          "ci_low": 51.842689609995254,
+          "ci_high": 52.95634376769829
+        }
+      },
+      "R6 tiered + capacity + coordination": {
+        "regime": "R6 tiered + capacity + coordination",
+        "reps": 200,
+        "flights": {
+          "mean": 44553.805,
+          "se": 13.472944594826934,
+          "ci_low": 44527.398028594136,
+          "ci_high": 44580.211971405864
+        },
+        "incident_per_10k": {
+          "mean": 0.43878567669090535,
+          "se": 0.021363882642871694,
+          "ci_low": 0.3969124667108768,
+          "ci_high": 0.48065888667093387
+        },
+        "casualty_per_10k": {
+          "mean": 0.04041217351551516,
+          "se": 0.007426274916874461,
+          "ci_low": 0.025856674678441216,
+          "ci_high": 0.054967672352589106
+        },
+        "completion": {
+          "mean": 0.9816138963056676,
+          "se": 7.567279004783328e-05,
+          "ci_low": 0.9814655776371739,
+          "ci_high": 0.9817622149741614
+        },
+        "unauth_rate": {
+          "mean": 0.014341326022098066,
+          "se": 9.379756331417425e-05,
+          "ci_low": 0.014157482798002285,
+          "ci_high": 0.014525169246193848
+        },
+        "cancel_rate": {
+          "mean": 0.009442640939226579,
+          "se": 6.823268068368966e-05,
+          "ci_low": 0.009308904885086547,
+          "ci_high": 0.00957637699336661
+        },
+        "detect_rate": {
+          "mean": 0.007113498706421847,
+          "se": 5.1852590872273484e-05,
+          "ci_low": 0.00701186762831219,
+          "ci_high": 0.007215129784531503
+        },
+        "duplicates_per_cross": {
+          "mean": 0.0,
+          "se": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0
+        },
+        "interrupt_rate": {
+          "mean": 0.04965379391825359,
+          "se": 0.00018368490293443023,
+          "ci_low": 0.04929377150850211,
+          "ci_high": 0.05001381632800508
+        },
+        "mean_delay_h": {
+          "mean": 5.742209937107313,
+          "se": 0.0015500606698122088,
+          "ci_low": 5.739171818194482,
+          "ci_high": 5.745248056020145
+        },
+        "p95_delay_h": {
+          "mean": 11.024266666666668,
+          "se": 0.00271903297234477,
+          "ci_low": 11.018937362040871,
+          "ci_high": 11.029595971292464
+        },
+        "cost_per_1k": {
+          "mean": 34.6170577916194,
+          "se": 0.3261154640700677,
+          "ci_low": 33.97787148204207,
+          "ci_high": 35.256244101196735
+        }
+      }
+    },
+    "meta": {
+      "req_frame": [
+        0.24358974358974358,
+        0.22797927461139897,
+        0.2767857142857143
+      ],
+      "req_strict": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "req_open": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "req_tiered": [
+        0.49295774647887314,
+        1.0,
+        1.0
+      ],
+      "cap_tiered": [
+        0.8999999999999999,
+        0.8999999999999999,
+        0.8999999999999999,
+        0.8999999999999999,
+        0.8999999999999999,
+        0.8499999999999999
+      ],
+      "cap_uniform": [
+        0.8499999999999999,
+        0.8499999999999999,
+        0.8499999999999999,
+        0.8499999999999999,
+        0.8499999999999999,
+        0.8499999999999999
+      ],
+      "cap_floor": [
+        0.7,
+        0.7,
+        0.65,
+        0.65,
+        0.7,
+        0.55
+      ],
+      "tiered_levels": {
+        "capital_core": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "dense_hub": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "market_driven": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "mountainous": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "border_coastal": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "sparse_resource": [
+          2,
+          2,
+          2,
+          1,
+          2,
+          2
+        ]
+      },
+      "uniform_levels": [
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "high_exposure_tiers": [
+        "border_coastal",
+        "capital_core",
+        "dense_hub"
+      ],
+      "national_rules": 18,
+      "full_rules": 26
+    },
+    "paired": {
+      "R3 tiered, equal budget - R2 uniform open, equal budget": {
+        "incident_per_10k": {
+          "diff": 0.03929069770742849,
+          "p_value": 0.1956352713495415,
+          "ci_low": -0.02185802690220729,
+          "ci_high": 0.10043942231706426,
+          "w": 8624.0
+        },
+        "completion": {
+          "diff": -0.09582000120605075,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.0960846525869753,
+          "ci_high": -0.0955553498251262,
+          "w": 0.0
+        },
+        "unauth_rate": {
+          "diff": 0.1747142984149185,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.17438377550912526,
+          "ci_high": 0.17504482132071175,
+          "w": 0.0
+        },
+        "duplicates_per_cross": {
+          "diff": 0.6960945413929462,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.6953886068707964,
+          "ci_high": 0.6968004759150961,
+          "w": 0.0
+        },
+        "interrupt_rate": {
+          "diff": -0.017665525882257848,
+          "p_value": 1.4800592114916534e-34,
+          "ci_low": -0.0184478260892681,
+          "ci_high": -0.016883225675247596,
+          "w": 2.0
+        },
+        "cost_per_1k": {
+          "diff": 66.47168591285177,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 65.60086711119975,
+          "ci_high": 67.34250471450379,
+          "w": 0.0
+        },
+        "mean_delay_h": {
+          "diff": 6.037635940392493,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 6.0364002433429444,
+          "ci_high": 6.038871637442041,
+          "w": 0.0
+        },
+        "p95_delay_h": {
+          "diff": 11.442664333333333,
+          "p_value": 3.493329998546238e-36,
+          "ci_low": 11.440170304281917,
+          "ci_high": 11.445158362384749,
+          "w": 0.0
+        }
+      },
+      "R4 tiered + coordination - R3 tiered, equal budget": {
+        "incident_per_10k": {
+          "diff": 0.002299838844528452,
+          "p_value": 0.21452724601020123,
+          "ci_low": -0.062259268453206625,
+          "ci_high": 0.06685894614226352,
+          "w": 8757.0
+        },
+        "completion": {
+          "diff": 0.042948553051425815,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.04261127571588605,
+          "ci_high": 0.04328583038696558,
+          "w": 0.0
+        },
+        "unauth_rate": {
+          "diff": -0.05972704188006625,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.060147757485017,
+          "ci_high": -0.0593063262751155,
+          "w": 0.0
+        },
+        "duplicates_per_cross": {
+          "diff": -0.6960945413929462,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.6968004759150961,
+          "ci_high": -0.6953886068707964,
+          "w": 0.0
+        },
+        "interrupt_rate": {
+          "diff": -0.1156948452753795,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.11634234537722712,
+          "ci_high": -0.11504734517353188,
+          "w": 0.0
+        },
+        "cost_per_1k": {
+          "diff": -18.665490059983952,
+          "p_value": 1.4579385692155708e-34,
+          "ci_low": -19.508817355683018,
+          "ci_high": -17.822162764284887,
+          "w": 1.0
+        },
+        "mean_delay_h": {
+          "diff": -0.037807395495325295,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.03904445704429445,
+          "ci_high": -0.03657033394635614,
+          "w": 0.0
+        },
+        "p95_delay_h": {
+          "diff": -0.01866433333333193,
+          "p_value": 5.561442554423001e-23,
+          "ci_low": -0.021158362384747175,
+          "ci_high": -0.016170304281916684,
+          "w": 6.0
+        }
+      },
+      "R1 uniform strict - R3 tiered, equal budget": {
+        "incident_per_10k": {
+          "diff": 0.49143680664723743,
+          "p_value": 1.0686585543084632e-19,
+          "ci_low": 0.40771907383414896,
+          "ci_high": 0.5751545394603259,
+          "w": 2607.0
+        },
+        "completion": {
+          "diff": -0.1084058678418863,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.10875772588127505,
+          "ci_high": -0.10805400980249755,
+          "w": 0.0
+        },
+        "unauth_rate": {
+          "diff": 0.19886518748762286,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.1984274483824488,
+          "ci_high": 0.19930292659279691,
+          "w": 0.0
+        },
+        "duplicates_per_cross": {
+          "diff": 0.30390545860705365,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.30319952408490386,
+          "ci_high": 0.30461139312920343,
+          "w": 0.0
+        },
+        "interrupt_rate": {
+          "diff": -0.032796911051640454,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.033606600353225116,
+          "ci_high": -0.03198722175005579,
+          "w": 0.0
+        },
+        "cost_per_1k": {
+          "diff": 34.730159459123044,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 33.7530731707245,
+          "ci_high": 35.70724574752159,
+          "w": 0.0
+        },
+        "mean_delay_h": {
+          "diff": -0.03868994841530051,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.04057175341784007,
+          "ci_high": -0.03680814341276095,
+          "w": 0.0
+        },
+        "p95_delay_h": {
+          "diff": -0.020301666666665295,
+          "p_value": 2.103549847153794e-21,
+          "ci_low": -0.023272709992264967,
+          "ci_high": -0.017330623341065624,
+          "w": 409.5
+        }
+      },
+      "R5 tiered + capacity - R3 tiered, equal budget": {
+        "incident_per_10k": {
+          "diff": -0.021893337680997507,
+          "p_value": 0.09690365685353325,
+          "ci_low": -0.08765751921228841,
+          "ci_high": 0.0438708438502934,
+          "w": 8333.0
+        },
+        "completion": {
+          "diff": 0.057736690752031736,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.05741761109762818,
+          "ci_high": 0.058055770406435295,
+          "w": 0.0
+        },
+        "unauth_rate": {
+          "diff": -0.1060893604184814,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.10654250937708902,
+          "ci_high": -0.10563621145987377,
+          "w": 0.0
+        },
+        "duplicates_per_cross": {
+          "diff": -3.830801858695165e-05,
+          "p_value": 0.8961248036019008,
+          "ci_low": -0.0010405072476303203,
+          "ci_high": 0.0009638912104564171,
+          "w": 9943.0
+        },
+        "interrupt_rate": {
+          "diff": 0.001177687886067494,
+          "p_value": 0.005009979377035169,
+          "ci_low": 0.00037910009790376035,
+          "ci_high": 0.0019762756742312277,
+          "w": 7750.0
+        },
+        "cost_per_1k": {
+          "diff": -23.39887806102104,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -24.185935806021625,
+          "ci_high": -22.611820316020456,
+          "w": 0.0
+        },
+        "mean_delay_h": {
+          "diff": -0.053513992569613845,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.05564628952176642,
+          "ci_high": -0.05138169561746127,
+          "w": 0.0
+        },
+        "p95_delay_h": {
+          "diff": -0.06942457142856945,
+          "p_value": 1.0448722343928135e-34,
+          "ci_low": -0.07299409842155634,
+          "ci_high": -0.06585504443558256,
+          "w": 0.0
+        }
+      },
+      "R6 tiered + capacity + coordination - R5 tiered + capacity": {
+        "incident_per_10k": {
+          "diff": -0.004000722787794731,
+          "p_value": 0.23870612479133568,
+          "ci_low": -0.06502138420827196,
+          "ci_high": 0.05701993863268249,
+          "w": 8445.0
+        },
+        "completion": {
+          "diff": 0.05199504225527798,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": 0.05172886041756238,
+          "ci_high": 0.05226122409299357,
+          "w": 0.0
+        },
+        "unauth_rate": {
+          "diff": -0.05428361197433904,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.054660673487436647,
+          "ci_high": -0.05390655046124144,
+          "w": 0.0
+        },
+        "duplicates_per_cross": {
+          "diff": -0.6960562333743594,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.696767128090301,
+          "ci_high": -0.6953453386584179,
+          "w": 0.0
+        },
+        "interrupt_rate": {
+          "diff": -0.1133220456482546,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.11398183650032762,
+          "ci_high": -0.11266225479618158,
+          "w": 0.0
+        },
+        "cost_per_1k": {
+          "diff": -17.782458897227375,
+          "p_value": 1.7465265977615162e-34,
+          "ci_low": -18.598197520888,
+          "ci_high": -16.96672027356675,
+          "w": 13.0
+        },
+        "mean_delay_h": {
+          "diff": -0.24191201071556634,
+          "p_value": 1.4361464127613523e-34,
+          "ci_low": -0.24536410216037818,
+          "ci_high": -0.2384599192707545,
+          "w": 0.0
+        },
+        "p95_delay_h": {
+          "diff": -0.34897309523809616,
+          "p_value": 1.3666966075605973e-34,
+          "ci_low": -0.3547460302561719,
+          "ci_high": -0.3432001602200204,
+          "w": 0.0
+        }
+      }
+    },
+    "reps": 200
+  },
+  "latency": {
+    "extract": {
+      "p50": 0.04561090910018803,
+      "p95": 0.0491017272799416,
+      "mean": 0.04614813636304792,
+      "unit": "ms"
+    },
+    "align": {
+      "p50": 0.0033882352802132067,
+      "p95": 0.0039080882382169085,
+      "mean": 0.003532500000560771,
+      "unit": "ms"
+    },
+    "emit_shacl": {
+      "p50": 0.15804999975443934,
+      "p95": 0.18315000011170923,
+      "mean": 0.16155499997694278,
+      "unit": "ms"
+    },
+    "decide": {
+      "p50": 0.008400000297115184,
+      "p95": 0.009000000318337698,
+      "mean": 0.008635749975383078,
+      "unit": "ms"
+    },
+    "decision_throughput_per_s": 115797.70174571786,
+    "n_rules": 26
+  },
+  "audit": {
+    "grounded": {
+      "rar_mean": 1.0,
+      "rar_min": 1.0,
+      "rar_max": 1.0,
+      "lec_mean": 1.0,
+      "tcc_mean": 0.6563333333333334,
+      "n_claims_mean": 18.865
+    },
+    "truncated": {
+      "rar_mean": 0.513266590389016,
+      "rar_min": 0.5,
+      "rar_max": 0.5294117647058824,
+      "lec_mean": 0.5509530857214681,
+      "tcc_mean": 0.6563333333333334,
+      "n_claims_mean": 18.865
+    },
+    "augmented": {
+      "rar_mean": 0.8622985286452678,
+      "rar_min": 0.85,
+      "rar_max": 0.8846153846153846,
+      "lec_mean": 1.0,
+      "tcc_mean": 0.6563333333333334,
+      "n_claims_mean": 21.865
+    },
+    "separation": {
+      "grounded_minus_truncated": 0.486733409610984,
+      "grounded_minus_augmented": 0.1377014713547322,
+      "ranges_disjoint": true
+    }
+  }
+}

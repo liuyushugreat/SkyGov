@@ -1,0 +1,147 @@
+{
+  "channels": {
+    "reliable": {
+      "P1": {
+        "satisfied": true,
+        "explored": 14,
+        "detail": "P1 成立：14 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+        "has_cex": false
+      },
+      "P2": {
+        "satisfied": true,
+        "explored": 14,
+        "detail": "P2 成立：14 个可达状态中未出现无法到达 CLOSE 的 ALERT 滞留状态（4 个 CLOSE 状态可达），不存在永久滞留的未确认 ALERT。",
+        "has_cex": false
+      },
+      "P3": {
+        "satisfied": true,
+        "explored": 14,
+        "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+        "has_cex": false
+      }
+    },
+    "lossy": {
+      "P1": {
+        "satisfied": true,
+        "explored": 22,
+        "detail": "P1 成立：22 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+        "has_cex": false
+      },
+      "P2": {
+        "satisfied": false,
+        "explored": 22,
+        "detail": "P2 被违反：22 个可达状态中有 2 个 ALERT 永久滞留状态（alert_pending、ALERT 已发、未 ACK、无在途消息，且无法到达 CLOSE）；通道 'lossy' 不能保证 ALERT 的最终送达。",
+        "has_cex": true
+      },
+      "P3": {
+        "satisfied": true,
+        "explored": 22,
+        "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+        "has_cex": false
+      }
+    },
+    "lossy_retry": {
+      "P1": {
+        "satisfied": true,
+        "explored": 46,
+        "detail": "P1 成立：46 个可达状态中 b_applications 的最大值为 1（<= 1）。该上界由 b_applied 守卫结构性保证：b_apply 只能从 delegated 触发且只触发一次。",
+        "has_cex": false
+      },
+      "P2": {
+        "satisfied": true,
+        "explored": 46,
+        "detail": "P2 成立：46 个可达状态中未出现无法到达 CLOSE 的 ALERT 滞留状态；另有 4 个「ALERT 已发、未 ACK、信道暂空」状态均为可重传恢复的暂态（4 个 CLOSE 状态可达），不存在永久滞留的未确认 ALERT。",
+        "has_cex": false
+      },
+      "P3": {
+        "satisfied": true,
+        "explored": 46,
+        "detail": "P3 成立：4 个可达 CLOSE 状态的最大 steps=7（界 K=12，余量 5 步）。",
+        "has_cex": false
+      }
+    }
+  },
+  "retry_boundary": [
+    {
+      "channel": "lossy",
+      "max_retries": 1,
+      "P1": true,
+      "P2": false,
+      "P3": true,
+      "explored": 22
+    },
+    {
+      "channel": "lossy",
+      "max_retries": 2,
+      "P1": true,
+      "P2": false,
+      "P3": true,
+      "explored": 22
+    },
+    {
+      "channel": "lossy",
+      "max_retries": 3,
+      "P1": true,
+      "P2": false,
+      "P3": true,
+      "explored": 22
+    },
+    {
+      "channel": "lossy",
+      "max_retries": 4,
+      "P1": true,
+      "P2": false,
+      "P3": true,
+      "explored": 22
+    },
+    {
+      "channel": "lossy",
+      "max_retries": 5,
+      "P1": true,
+      "P2": false,
+      "P3": true,
+      "explored": 22
+    },
+    {
+      "channel": "lossy_retry",
+      "max_retries": 1,
+      "P1": true,
+      "P2": true,
+      "P3": true,
+      "explored": 30
+    },
+    {
+      "channel": "lossy_retry",
+      "max_retries": 2,
+      "P1": true,
+      "P2": true,
+      "P3": true,
+      "explored": 46
+    },
+    {
+      "channel": "lossy_retry",
+      "max_retries": 3,
+      "P1": true,
+      "P2": true,
+      "P3": true,
+      "explored": 62
+    },
+    {
+      "channel": "lossy_retry",
+      "max_retries": 4,
+      "P1": true,
+      "P2": true,
+      "P3": true,
+      "explored": 78
+    },
+    {
+      "channel": "lossy_retry",
+      "max_retries": 5,
+      "P1": true,
+      "P2": true,
+      "P3": true,
+      "explored": 94
+    }
+  ],
+  "counterexample_text": "反例路径：6 个状态，5 个动作\n\n[00] <init> phase=idle b_app=0 b_applied=0 alert=-/- retries=0 in_flight=- last=- steps=0\n[01] --reg_send--> phase=registered b_app=0 b_applied=0 alert=-/- retries=0 in_flight=REGISTER last=REGISTER steps=1\n[02] --verify_ok--> phase=verified b_app=0 b_applied=0 alert=-/- retries=0 in_flight=VERIFY last=VERIFY steps=2\n[03] --delegate_send--> phase=delegated b_app=0 b_applied=0 alert=-/- retries=0 in_flight=DELEGATE last=DELEGATE steps=3\n[04] --b_alert--> phase=alert_pending b_app=0 b_applied=0 alert=issued/- retries=0 in_flight=ALERT last=ALERT steps=4\n[05] --drop:ALERT--> phase=alert_pending b_app=0 b_applied=0 alert=issued/- retries=0 in_flight=- last=ALERT steps=4\n\n诊断：末状态是 ALERT 永久滞留（P2 反例）。ALERT 已发出、从未被 ACK，且信道上已无该消息（in_flight=None）；当前通道没有可用的重传动作，状态机因此无法到达 CLOSE，告警被永久丢失。"
+}
