@@ -1,4 +1,4 @@
-# SkyGov-C
+﻿# SkyGov-C
 
 **Compiling institutional rules into an executable, auditable, tiered governance
 rule base for urban low-altitude operations.**
@@ -243,17 +243,3 @@ need to reference this artefact, please cite the repository URL:
 SkyGov-C: compiling institutional rules into auditable tiered governance.
 https://github.com/liuyushugreat/SkyGov (2026)
 ```
-
-## 中文速览
-
-本仓库是论文 **《From Regulation to Execution: Compiling Institutional Rules into
-Auditable Tiered Governance for Urban Low-Altitude Safety》** 的完整支撑代码，目前该文
-处于**双盲评审**阶段，故 README 中隐去会议与作者信息（获奖/录用后再补全引用）。
-
-- **做什么**：把 16 份低空监管文件编译成带法源溯源的**可执行规则库**（SHACL + SPARQL），
-  再据此做分级判定、预算约束的能力配置、经模型检验的跨域接续，以及闭环校准与回退。
-- **一键复现**：`pip install -r requirements.txt` → `python -m pytest tests -q`（87 项）
-  → `python -m skygovc.experiments.run_all`（约 40 秒，生成论文全部表格与图）。
-- **不依赖大模型**：抽取器是确定性的符号实现，论文报告的数字与任何模型版本无关。
-- **诚实的负结果**：留出块上精确匹配 F1 仅 0.231、动作归一化 0.500——瓶颈在**模式表达力**
-  而非词表。这一点写在论文与代码里，没有藏起来。
