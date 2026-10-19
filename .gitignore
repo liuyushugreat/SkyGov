@@ -38,7 +38,9 @@ env/
 .DS_Store
 Thumbs.db
 
-# Local scratch (never committed)
-_*.py
-_*.txt
-scratch/
+# Local scratch.  NOTE: these patterns are anchored to the repository root and
+# require an explicit `_scratch_` prefix on purpose.  A bare `_*.py` pattern
+# would also match every package `__init__.py` and silently break the release.
+/_scratch_*.py
+/_scratch_*.txt
+/scratch/
